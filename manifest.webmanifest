@@ -1,0 +1,23 @@
+{
+  "name": "2606 家庭旅遊沖繩",
+  "short_name": "沖繩行程",
+  "description": "2026/6/6-2026/6/13 沖繩家族旅遊規劃，整理住宿、行程與備用景點。",
+  "lang": "zh-Hant",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4efe7",
+  "theme_color": "#f4efe7",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

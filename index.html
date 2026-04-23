@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2606 家庭旅遊 沖繩</title>
+    <meta
+      name="description"
+      content="2026/6/6-2026/6/13 沖繩家族旅遊規劃，整理住宿、行程與備用景點。"
+    />
+    <meta name="theme-color" content="#f4efe7" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="沖繩行程" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <nav class="top-nav" aria-label="頁面捷徑">
+        <a href="#stays">住宿</a>
+        <a href="#schedule">行程</a>
+        <a href="#backups">備用</a>
+        <a href="./family-share-poster.html" target="_blank" rel="noreferrer">海報</a>
+      </nav>
+
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">OKINAWA FAMILY DRIVE PLAN</p>
+          <h1><span class="hero-line">2606 家庭旅遊</span><span class="hero-line">沖繩 8 日行程</span></h1>
+          <p class="hero-summary">
+            以三段換宿為節奏，先北谷採買與散步，再切到恩納海景、飯店浮潛與放鬆，最後用那霸市區與晚回班機收尾。
+          </p>
+          <p class="hero-map-link-row">
+            <a
+              class="hero-map-link"
+              href="https://www.google.com/maps/d/u/0/edit?mid=1tjRC0oR0pOcLZ_Uy0OTNPtPiZAqREe4&usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              >查看 Google 我的地圖</a
+            >
+            <a class="hero-map-link" href="./family-share-poster.html" target="_blank" rel="noreferrer"
+              >開啟家人海報版</a
+            >
+            <a class="hero-map-link" href="./family-share-poster.pdf" target="_blank" rel="noreferrer"
+              >開啟 PDF</a
+            >
+          </p>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="hero-stat-grid">
+            <article>
+              <span class="stat-label">日期</span>
+              <strong>6/6 - 6/13</strong>
+            </article>
+            <article>
+              <span class="stat-label">成員</span>
+              <strong>8 人家族</strong>
+            </article>
+            <article>
+              <span class="stat-label">交通</span>
+              <strong>兩台車自駕</strong>
+            </article>
+            <article>
+              <span class="stat-label">住宿段數</span>
+              <strong>3 段換宿</strong>
+            </article>
+          </div>
+          <div class="hero-logistics">
+            <article class="hero-logistics-card hero-logistics-card--wide">
+              <span class="stat-label">航班與租車</span>
+              <div class="hero-flight-stack">
+                <div class="hero-flight-line">
+                  <strong>去程 BR112</strong>
+                  <p>06:45 桃園起飛 → 09:15 那霸抵達</p>
+                </div>
+                <div class="hero-flight-line">
+                  <strong>回程 BR185</strong>
+                  <p>20:10 那霸起飛 → 20:45 桃園抵達</p>
+                </div>
+                <div class="hero-flight-line">
+                  <strong>租車 OTS 臨空豐岐營業所</strong>
+                  <p>那霸機場取還車，兩台車自駕。</p>
+                </div>
+              </div>
+              <p class="install-status" id="install-status">用 Safari 開啟後可加入主畫面，安裝後可離線查看。</p>
+            </article>
+          </div>
+        </aside>
+      </header>
+
+      <main class="content-grid">
+        <section class="panel stays-panel" id="stays">
+          <div class="section-heading">
+            <p class="eyebrow">Stay Rhythm</p>
+            <h2>住宿</h2>
+          </div>
+          <div class="stay-timeline" id="stay-timeline"></div>
+        </section>
+
+        <section class="panel schedule-panel" id="schedule">
+          <div class="section-heading">
+            <p class="eyebrow">Daily Flow</p>
+            <h2>行程</h2>
+          </div>
+          <div class="day-card-grid" id="day-card-grid"></div>
+        </section>
+
+        <section class="panel backup-panel" id="backups">
+          <div class="section-heading">
+            <p class="eyebrow">Backup Pool</p>
+            <h2>備用景點</h2>
+          </div>
+          <div class="backup-filter-bar" id="backup-filter-bar"></div>
+          <div class="backup-grid" id="backup-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <div class="floating-segment-switcher" id="floating-segment-switcher" aria-label="日期切換"></div>
+
+    <script type="module" src="./app.js?v=2026-04-09-1"></script>
+  </body>
+</html>

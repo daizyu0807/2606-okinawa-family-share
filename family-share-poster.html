@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2606 沖繩家族旅遊｜海報版行程表</title>
+    <style>
+      :root {
+        --paper: #fff9ee;
+        --ink: #2b2b2b;
+        --blue: #356fcb;
+        --blue-deep: #2454a3;
+        --sand: #fff1c9;
+        --peach: #ffd9c8;
+        --mint: #dff5d8;
+        --sky: #dff0ff;
+        --lavender: #ece1ff;
+        --rose: #ffe6ef;
+        --line: #2f3a56;
+        --soft-line: rgba(47, 58, 86, 0.2);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+        background:
+          radial-gradient(circle at top left, #fff7d8 0, transparent 22%),
+          radial-gradient(circle at top right, #e0f6ff 0, transparent 24%),
+          linear-gradient(180deg, #fffaf0 0%, #fff6ea 100%);
+      }
+
+      .sheet {
+        width: min(1680px, calc(100vw - 24px));
+        margin: 12px auto;
+        border: 3px solid var(--line);
+        border-radius: 26px;
+        overflow: hidden;
+        background: var(--paper);
+        box-shadow: 0 18px 40px rgba(37, 48, 80, 0.15);
+      }
+
+      .hero {
+        position: relative;
+        padding: 22px 28px 18px;
+        background:
+          radial-gradient(circle at 12% 20%, rgba(255, 214, 92, 0.7) 0 18px, transparent 19px),
+          radial-gradient(circle at 88% 18%, rgba(255, 214, 92, 0.7) 0 14px, transparent 15px),
+          linear-gradient(180deg, #fff8dc 0%, #fff5d7 100%);
+        text-align: center;
+      }
+
+      .title-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .mascot {
+        font-size: 3.2rem;
+        line-height: 1;
+        transform: rotate(-4deg);
+      }
+
+      .mascot.right { transform: rotate(6deg); }
+
+      .title-block h1 {
+        margin: 0;
+        font-size: clamp(2.1rem, 3vw, 3.4rem);
+        line-height: 1.05;
+        letter-spacing: 0.04em;
+      }
+
+      .title-top { display: block; color: #e5523b; }
+      .title-bottom { display: block; color: #2f66c8; }
+
+      .subtitle {
+        margin: 8px 0 0;
+        font-size: 1.02rem;
+        font-weight: 700;
+        color: #456058;
+      }
+
+      .speech {
+        position: absolute;
+        right: 26px;
+        top: 22px;
+        max-width: 180px;
+        padding: 12px 14px;
+        border: 3px solid var(--line);
+        border-radius: 999px;
+        background: #fff;
+        font-size: 1.05rem;
+        font-weight: 800;
+        line-height: 1.35;
+      }
+
+      .meta-strip {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .poster-actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .poster-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 9px 14px;
+        border: 2px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.86);
+        color: var(--blue-deep);
+        text-decoration: none;
+        font-size: 0.92rem;
+        font-weight: 900;
+      }
+
+      .poster-link:hover,
+      .poster-link:focus-visible {
+        background: #fff;
+        outline: none;
+      }
+
+      .meta-card {
+        padding: 10px 12px;
+        border: 2px solid var(--line);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.8);
+        font-size: 0.95rem;
+        font-weight: 700;
+      }
+
+      .meta-card strong {
+        display: block;
+        margin-bottom: 2px;
+        color: var(--blue-deep);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+
+      thead th {
+        padding: 12px 8px;
+        border: 2px solid var(--line);
+        background: linear-gradient(180deg, #4c87df 0%, #2f66c8 100%);
+        color: #fff;
+        font-size: 1.45rem;
+        font-weight: 900;
+      }
+
+      tbody td {
+        vertical-align: top;
+        padding: 12px 10px;
+        border: 2px solid var(--soft-line);
+        font-size: 1rem;
+        line-height: 1.45;
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      tbody tr:nth-child(1) .date-cell { background: var(--sand); }
+      tbody tr:nth-child(2) .date-cell { background: var(--rose); }
+      tbody tr:nth-child(3) .date-cell { background: var(--mint); }
+      tbody tr:nth-child(4) .date-cell { background: var(--peach); }
+      tbody tr:nth-child(5) .date-cell { background: #e6f7ef; }
+      tbody tr:nth-child(6) .date-cell { background: var(--sky); }
+      tbody tr:nth-child(7) .date-cell { background: #ffeed1; }
+      tbody tr:nth-child(8) .date-cell { background: var(--lavender); }
+
+      .date-cell {
+        text-align: center;
+        font-weight: 900;
+        font-size: 1.1rem;
+        color: #2b3552;
+      }
+
+      .date-main {
+        display: block;
+        font-size: 2rem;
+        line-height: 1.1;
+      }
+
+      .date-sub {
+        display: block;
+        margin-top: 4px;
+        font-size: 1.4rem;
+      }
+
+      .focus-title {
+        margin: 0 0 8px;
+        font-size: 1.36rem;
+        line-height: 1.25;
+        font-weight: 900;
+      }
+
+      .emoji-line {
+        display: block;
+        margin-top: 8px;
+        font-size: 1.7rem;
+        line-height: 1;
+      }
+
+      .transport-badge,
+      .stay-badge {
+        display: inline-block;
+        margin-bottom: 8px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: #eef5ff;
+        color: var(--blue-deep);
+        font-size: 0.86rem;
+        font-weight: 900;
+      }
+
+      ul { margin: 0; padding-left: 1.15em; }
+      li + li { margin-top: 4px; }
+
+      .small { font-size: 0.92rem; }
+
+      .notes {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+        padding: 14px 18px 18px;
+        border-top: 3px solid var(--line);
+        background: linear-gradient(180deg, #fff6df 0%, #fff2d1 100%);
+      }
+
+      .note-card {
+        padding: 10px 12px;
+        border: 2px solid var(--line);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.78);
+        font-size: 0.95rem;
+        font-weight: 700;
+      }
+
+      .note-card strong {
+        display: block;
+        margin-bottom: 4px;
+        color: #cc6b1e;
+      }
+
+      .footnote {
+        padding: 0 18px 18px;
+        font-size: 0.82rem;
+        color: #6b6b6b;
+      }
+
+      @media (max-width: 1180px) {
+        .sheet { width: calc(100vw - 16px); border-radius: 18px; }
+        .speech { position: static; margin: 12px auto 0; }
+        .meta-strip,
+        .notes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .table-wrap { overflow-x: auto; }
+        table { min-width: 1120px; }
+      }
+
+      @media print {
+        @page {
+          size: A4 landscape;
+          margin: 8mm;
+        }
+
+        body { background: #fff; }
+
+        .sheet {
+          width: 100%;
+          margin: 0;
+          box-shadow: none;
+          border-width: 2px;
+        }
+
+        .poster-actions {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="sheet">
+      <section class="hero">
+        <div class="title-row">
+          <div class="mascot" aria-hidden="true">✈️</div>
+          <div class="title-block">
+            <h1>
+              <span class="title-top">沖繩 8 天 7 夜</span>
+              <span class="title-bottom">家族自由行行程表</span>
+            </h1>
+            <p class="subtitle">2606-okinawa-family-trip｜三段換宿・8 人家族・兩台車自駕</p>
+          </div>
+          <div class="mascot right" aria-hidden="true">🏝️</div>
+        </div>
+
+        <div class="speech">照這張走就好<br />吃玩住一次看懂</div>
+
+        <div class="meta-strip">
+          <article class="meta-card">
+            <strong>日期</strong>
+            2026/6/6（六）- 2026/6/13（六）
+          </article>
+          <article class="meta-card">
+            <strong>去程</strong>
+            BR112 06:45 桃園起飛 → 09:15 那霸抵達
+          </article>
+          <article class="meta-card">
+            <strong>回程</strong>
+            BR185 20:10 那霸起飛 → 20:45 桃園抵達
+          </article>
+          <article class="meta-card">
+            <strong>交通節奏</strong>
+            OTS 兩台租車，全程自駕移動
+          </article>
+        </div>
+
+        <div class="poster-actions">
+          <a class="poster-link" href="./index.html">回主分享頁</a>
+          <a class="poster-link" href="./family-share-poster.png" target="_blank" rel="noreferrer">開圖片版</a>
+          <a class="poster-link" href="./family-share-poster.pdf" target="_blank" rel="noreferrer">開 PDF 版</a>
+        </div>
+      </section>
+
+      <div class="table-wrap">
+        <table aria-label="沖繩家族旅遊海報式行程表">
+          <colgroup>
+            <col style="width: 8.5%" />
+            <col style="width: 19%" />
+            <col style="width: 12.5%" />
+            <col style="width: 26%" />
+            <col style="width: 14%" />
+            <col style="width: 20%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>行程重點</th>
+              <th>交通</th>
+              <th>景點 / 活動</th>
+              <th>吃什麼</th>
+              <th>住宿</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/6</span><span class="date-sub">六</span></td>
+              <td><p class="focus-title">抵達沖繩<br />先採買再入住</p><div class="small">第一天不塞景點，走輕鬆恢復體力路線。</div><span class="emoji-line">✈️🛒🎆</span></td>
+              <td><span class="transport-badge">機場接駁 + 自駕</span><ul><li>那霸機場取兩台車</li><li>機場 → AEON Rycom</li><li>Rycom → 北谷飯店</li></ul></td>
+              <td><ul><li>09:15 抵達那霸，OTS 取車</li><li>AEON Rycom 採買食材、飲料、生活用品</li><li>入住 Lapin Mihama Residence Hotel</li><li>晚上美國村海邊散步</li><li>20:00 北谷西海岸週六煙火</li></ul></td>
+              <td><ul><li>機場或沿途簡單午餐</li><li>晚餐可自炊或美國村簡單吃</li></ul></td>
+              <td><span class="stay-badge">6/6 - 6/8</span><strong>Lapin Mihama Residence Hotel</strong><br />北谷美濱公寓式住宿，可開伙。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/7</span><span class="date-sub">日</span></td>
+              <td><p class="focus-title">北谷自由日<br />購物＋海邊散步</p><div class="small">主力是美國村與 2nd STREET。</div><span class="emoji-line">🍙👕🌴</span></td>
+              <td><span class="transport-badge">步行 + 短程開車</span><ul><li>飯店周邊為主</li><li>北谷商圈慢移動</li></ul></td>
+              <td><ul><li>早餐吃豬肉蛋飯糰</li><li>2nd STREET 北谷店挖寶</li><li>美國村慢逛、日落海灘散步</li><li>傍晚可排浜屋沖繩麵</li></ul></td>
+              <td><ul><li>早餐：Potama</li><li>正餐：浜屋そば</li><li>晚上可再回美國村覓食</li></ul></td>
+              <td><span class="stay-badge">北谷第二晚</span><strong>Lapin Mihama Residence Hotel</strong><br />走路可接美國村與海邊。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/8</span><span class="date-sub">一</span></td>
+              <td><p class="focus-title">移動到恩納村<br />入住分流日</p><div class="small">換宿後切成度假節奏。</div><span class="emoji-line">🚗🏨🎣</span></td>
+              <td><span class="transport-badge">北谷 → 恩納自駕</span><ul><li>沿海路線約 40-50 分</li><li>飯店周邊短程移動</li></ul></td>
+              <td><ul><li>上午退房北上前往恩納</li><li>15:00 後飯店 check-in</li><li>父親可釣魚，其餘家人海邊散步</li><li>以飯店設施與附近海岸為主</li></ul></td>
+              <td><ul><li>晚上飯店自助晚餐</li><li>第一晚不再排遠程點</li></ul></td>
+              <td><span class="stay-badge">6/8 - 6/11</span><strong>沖繩蒙特利 Spa 度假酒店</strong><br />恩納村海景飯店，主打沙灘、泳池、放鬆。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/9</span><span class="date-sub">二</span></td>
+              <td><p class="focus-title">飯店浮潛優先<br />接讀谷半日遊</p><div class="small">海況好就玩海，午後只留兩個文化點。</div><span class="emoji-line">🤿🏰🗼</span></td>
+              <td><span class="transport-badge">飯店內 + 短程自駕</span><ul><li>飯店 → 座喜味約 15-20 分</li><li>座喜味 → 殘波岬約 10 分</li></ul></td>
+              <td><ul><li>上午飯店浮潛 / 私人沙灘活動</li><li>中午飯店設施活動或館內午餐</li><li>午後座喜味城跡</li><li>傍晚殘波岬看海景與燈塔</li><li>雨天可改琉球村等室內備案</li></ul></td>
+              <td><ul><li>中午：飯店內彈性安排</li><li>晚上：飯店自助晚餐</li></ul></td>
+              <td><span class="stay-badge">恩納第二晚</span><strong>沖繩蒙特利 Spa 度假酒店</strong><br />行程以飯店活動為主軸。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/10</span><span class="date-sub">三</span></td>
+              <td><p class="focus-title">恩納彈性日<br />甜點＋文化館舍</p><div class="small">保留最多彈性，天氣不好也能走。</div><span class="emoji-line">🏖️🍍🏛️</span></td>
+              <td><span class="transport-badge">近距離自駕</span><ul><li>飯店 → 恩納之驛約 10 分</li><li>村內景點短程接續</li></ul></td>
+              <td><ul><li>上午飯店沙灘 / 泳池 / 館內設施</li><li>中午恩納之驛用餐＋琉冰甜點</li><li>午後恩納村文化情報中心 / 博物館</li><li>傍晚回飯店休息，接晚餐</li></ul></td>
+              <td><ul><li>午餐＋甜點：恩納之驛</li><li>晚上：飯店自助晚餐</li></ul></td>
+              <td><span class="stay-badge">恩納第三晚</span><strong>沖繩蒙特利 Spa 度假酒店</strong><br />恩納段最後一晚，輕鬆收尾。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/11</span><span class="date-sub">四</span></td>
+              <td><p class="focus-title">南下那霸<br />DMM 水族館長版停留</p><div class="small">換飯店日最順的南部路線。</div><span class="emoji-line">🚗🐠🌃</span></td>
+              <td><span class="transport-badge">恩納 → 豐見城 → 那霸</span><ul><li>恩納 → iias 約 60-70 分</li><li>DMM → 那霸飯店約 20-25 分</li></ul></td>
+              <td><ul><li>上午退房後南下</li><li>iias 沖繩豐崎先吃午餐</li><li>DMM Kariyushi 水族館慢慢逛到傍晚</li><li>傍晚入住那霸，晚上可逛國際通</li></ul></td>
+              <td><ul><li>中午：iias 內用餐</li><li>晚上：國際通覓食或飯店宵夜拉麵</li></ul></td>
+              <td><span class="stay-badge">6/11 - 6/13</span><strong>沖繩逸之彩飯店</strong><br />近國際通、牧志市場，晚上活動方便。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/12</span><span class="date-sub">五</span></td>
+              <td><p class="focus-title">牧志市場海鮮<br />瀨長島半日</p><div class="small">市區慢走＋海邊收尾感很強的一天。</div><span class="emoji-line">🍱✈️🌊</span></td>
+              <td><span class="transport-badge">步行 + 自駕</span><ul><li>飯店步行到牧志市場</li><li>那霸 → 瀨長島約 20-25 分</li></ul></td>
+              <td><ul><li>上午國際通 / 牧志周邊慢走</li><li>中午第一牧志公設市場海鮮午餐</li><li>下午瀨長島 Umikaji Terrace</li><li>回那霸後自由活動</li></ul></td>
+              <td><ul><li>主午餐：牧志市場海鮮</li><li>晚上：國際通自由吃或飯店宵夜拉麵</li></ul></td>
+              <td><span class="stay-badge">那霸第二晚</span><strong>沖繩逸之彩飯店</strong><br />晚上可自由安排市區收尾。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/13</span><span class="date-sub">六</span></td>
+              <td><p class="focus-title">返台日<br />市區補逛＋Outlet</p><div class="small">抓保守機場緩衝，不要太晚還車。</div><span class="emoji-line">🛍️🚗✈️</span></td>
+              <td><span class="transport-badge">那霸市區 + 機場還車</span><ul><li>那霸 → Ashibinaa 約 20-25 分</li><li>景點 → OTS 還車點</li><li>接駁回那霸機場</li></ul></td>
+              <td><ul><li>上午退房後市區輕鬆補逛 / 咖啡</li><li>下午 Ashibinaa Outlet 最後採買</li><li>16:30 前建議完成還車</li><li>20:10 BR185 從那霸返台</li></ul></td>
+              <td><ul><li>早餐 / 早午餐市區彈性安排</li><li>下午視採買節奏簡單吃</li><li>上機前預留托運與出境時間</li></ul></td>
+              <td><span class="stay-badge">返台</span><strong>當日離境</strong><br />那霸機場出發，晚上回到台灣。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <section class="notes">
+        <article class="note-card"><strong>小提醒 1</strong>第一天晚餐走輕鬆路線，重點是順利接上北谷煙火。</article>
+        <article class="note-card"><strong>小提醒 2</strong>恩納段以飯店活動為主，海況不好就切雨天備案，不硬衝。</article>
+        <article class="note-card"><strong>小提醒 3</strong>6/13 建議 16:30 前完成還車，留接駁、托運、安檢緩衝。</article>
+        <article class="note-card"><strong>小提醒 4</strong>這張是家人版總表；若要看細時間，可回主分享頁查看完整節奏。</article>
+      </section>
+
+      <div class="footnote">本頁依 `2606-okinawa-family-trip` 目前行程整理為海報式摘要版，風格參考你提供的家庭旅遊大字報，但未直接複製角色或原圖元素。</div>
+    </main>
+  </body>
+</html>
