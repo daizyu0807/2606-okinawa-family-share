@@ -32,8 +32,8 @@ const tripData = {
             { time: "06:45", label: "BR112 台北桃園出發", duration: "06:45 起飛", desc: "早班機，建議 04:45 前抵達桃園二航廈。" },
             { time: "09:15-10:30", label: "那霸機場取車", duration: "約 60 分", desc: "09:15 抵達後前往 OTS 臨空豐岐營業所（那霸機場）領兩台車。" },
             { time: "11:00-12:30", label: "機場或沿途簡單午餐", duration: "約 60-90 分", desc: "第一天不塞景點，先讓大家補體力再北上。" },
-            { time: "13:10-14:40", label: "AEON Mall Rycom", duration: "約 90 分", desc: "先補食材、飲料、早餐麵包和生活用品，第一晚回公寓會輕鬆很多。" },
-            { time: "14:40-15:25", label: "AEON Mall Rycom", duration: "約 45 分", desc: "可在館內順手補 3COINS、無印與 Uniqlo，補齊拖鞋、收納小物、防曬衣或臨時缺的衣物日用品。" },
+            { time: "13:10-14:40", label: "SAN-A PARCO CITY", duration: "約 90 分", desc: "先補食材、飲料、早餐麵包和生活用品，第一晚回公寓會輕鬆很多。" },
+            { time: "14:40-15:25", label: "SAN-A PARCO CITY", duration: "約 45 分", desc: "可在館內順手用餐、休息與看海，補齊臨時缺的衣物日用品。" },
             { time: "16:00-16:30", label: "入住 Lapin Mihama", duration: "約 30 分", desc: "安頓行李、分配房間與停車。" },
             { time: "18:00-19:00", label: "公寓開伙晚餐或美國村簡單覓食", duration: "約 60 分", desc: "以恢復體力為主，晚餐後直接接煙火動線最順。" },
             { time: "19:15-19:50", label: "美國村海邊散步＋卡位", duration: "約 30 分", desc: "建議往海邊 promenade 或 Depot Island 海側移動，提早找好全家一起看的位置。" },
@@ -177,10 +177,10 @@ const tripData = {
           description: "沖繩麵老店類型的午餐備案，適合想吃在地熱食時安排。"
         },
         {
-          name: "AEON Mall Rycom",
+          name: "SAN-A PARCO CITY",
           badges: ["shopping", "rainy"],
-          distance: "距離 Lapin 約 20 分鐘車程",
-          description: "大型商場，適合第一天集中補食材、衣物和日用品。"
+          distance: "距離 Lapin 約 25-35 分鐘車程",
+          description: "浦添海邊大型商場，適合第一天集中補食材、衣物和日用品。"
         },
         {
           name: "日落海灘",
@@ -360,6 +360,12 @@ const tripData = {
           description: "可和 DMM、iias 串成同一段南部採買動線，但不一定要硬塞在換宿日。"
         },
         {
+          name: "SPORTS DEPO 豐崎",
+          badges: ["shopping", "rainy"],
+          distance: "位於 TOMITON 內，距離 Ashibinaa 約 5 分鐘車程",
+          description: "運動用品、球鞋、泳具與戶外用品備案，適合接 DMM / iias / Outlet 的豐見城動線。"
+        },
+        {
           name: "瀨長島 Umikaji Terrace",
           badges: ["sunny"],
           distance: "距離飯店約 20 分鐘車程",
@@ -410,7 +416,7 @@ const placeCatalog = [
   { aliases: ["Lapin Mihama Residence Hotel", "入住 Lapin Mihama"], mapQuery: "Lapin Mihama Residence Hotel", type: "住宿" },
   { aliases: ["沖繩蒙特利 Spa 度假酒店", "Hotel Monterey Okinawa Spa & Resort"], mapQuery: "Hotel Monterey Okinawa Spa and Resort", type: "度假飯店" },
   { aliases: ["沖繩逸之彩飯店", "入住逸之彩", "Okinawa Hinode Hotel"], mapQuery: "Okinawa Hinode Hotel", type: "市區飯店" },
-  { aliases: ["AEON Mall Rycom", "AEON Rycom"], mapQuery: "AEON Mall Okinawa Rycom", type: "購物中心" },
+  { aliases: ["SAN-A PARCO CITY", "Parco City"], mapQuery: "San-A Urasoe West Coast PARCO CITY", type: "購物中心" },
   { aliases: ["BR112 台北桃園出發"], mapQuery: "Taoyuan International Airport Terminal 2", type: "航班" },
   { aliases: ["BR185 那霸返台"], mapQuery: "Naha Airport", type: "航班" },
   { aliases: ["那霸機場取車"], mapQuery: "OTS 臨空豐岐營業所（那霸機場）", type: "租車" },
@@ -453,6 +459,7 @@ const placeCatalog = [
   { aliases: ["座喜味城跡"], mapQuery: "Zakimi Castle Ruins", type: "歷史散步點" },
   { aliases: ["殘波岬"], mapQuery: "Cape Zanpa", type: "海岬景點" },
   { aliases: ["Ashibinaa Outlet"], mapQuery: "Okinawa Outlet Mall Ashibinaa", type: "Outlet" },
+  { aliases: ["SPORTS DEPO 豐崎", "SPORTS DEPO Toyosaki"], mapQuery: "SPORTS DEPO Toyosaki 1-411 Toyosaki Tomigusuku Okinawa", type: "運動用品店" },
   { aliases: ["瀨長島 Umikaji Terrace"], mapQuery: "Senagajima Umikaji Terrace", type: "海景商場" },
   { aliases: ["榮町市場"], mapQuery: "Sakaemachi Market Naha", type: "市場" },
   { aliases: ["波上宮"], mapQuery: "Naminoue Shrine", type: "神社" }
@@ -694,8 +701,10 @@ renderBackups();
 
 async function setupPwaSupport() {
   const isStandalone = window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+  const isHttpLike = location.protocol === "http:" || location.protocol === "https:";
   const canRegisterServiceWorker =
     "serviceWorker" in navigator &&
+    isHttpLike &&
     (window.isSecureContext || location.hostname === "localhost" || location.hostname === "127.0.0.1");
 
   if (installStatus) {
