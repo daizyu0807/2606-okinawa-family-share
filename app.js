@@ -50,7 +50,7 @@ const tripData = {
             { time: "10:00-11:00", label: "美式雜貨店阿美利肯迪波（American Depot）＋美國村先逛", duration: "約 60 分", desc: "10:00 開門的逛街型名店，不用排座位，適合等午餐前先逛。" },
             { time: "11:00-12:15", label: "美國村名店午餐候選", duration: "約 75 分", desc: "優先看 88 牛排館（Steak House 88） 或 東尼羅馬美式肋排（Tony Roma's）；若想在地口味可改塔可飯咖啡奇吉姆那（タコライスCafe きじむなぁ） 或鶴小沖繩麵（そば家 鶴小）。" },
             { time: "12:30-13:45", label: "二手街北谷店（2nd STREET）", duration: "約 60-75 分", desc: "主力二手挖寶點，依停車與體力決定是否全員同行。" },
-            { time: "13:45-14:30", label: "ワークマンプラス北谷國體道路店（WORKMAN Plus 北谷国体道路店）", duration: "約 30-45 分", desc: "機能服、涼感衣、雨衣、防曬與鞋襪採買備案；停車約 10 台，現場不好停就跳過。" },
+            { time: "13:45-14:30", label: "沃克曼Plus 北谷國體道路店（WORKMAN Plus）", duration: "約 30-45 分", desc: "機能服、涼感衣、雨衣、防曬與鞋襪採買備案；停車約 10 台，現場不好停就跳過。" },
             { time: "14:00-15:30", label: "美國村慢逛＋日落海灘散步", duration: "約 90 分", desc: "商圈、伴手禮和海邊景色一起排，不硬塞甜點店。" }
           ],
           note: "重心完全放在北谷；餐廳用候選方式處理，避免 8 人被單一排隊名店卡住。"
@@ -159,7 +159,7 @@ const tripData = {
           description: "北谷主要二手店，古著、包包、鞋款和生活雜貨都能一起看。"
         },
         {
-          name: "ワークマンプラス北谷國體道路店（WORKMAN Plus 北谷国体道路店）",
+          name: "沃克曼Plus 北谷國體道路店（WORKMAN Plus）",
           badges: ["shopping", "rainy"],
           distance: "距離二手街北谷店約短程車程",
           description: "機能服、涼感衣、雨衣、防曬、鞋襪與戶外小物備案；停車約 10 台，適合分流短停。"
@@ -464,7 +464,7 @@ const placeCatalog = [
   { aliases: ["那霸機場取車"], mapQuery: "OTS 臨空豐岐營業所（那霸機場）", type: "租車" },
   { aliases: ["豬肉蛋飯糰（北谷美國村店）"], mapQuery: "ポーたま 北谷アメリカンビレッジ店 沖縄", type: "早餐店" },
   { aliases: ["二手街北谷店（2nd STREET）"], mapQuery: "2nd STREET 北谷店 沖縄", type: "二手店" },
-  { aliases: ["ワークマンプラス北谷國體道路店（WORKMAN Plus 北谷国体道路店）"], mapQuery: "WORKMAN Plus 北谷国体道路店 沖縄", type: "機能服店" },
+  { aliases: ["沃克曼Plus 北谷國體道路店（WORKMAN Plus）"], mapQuery: "WORKMAN Plus 北谷国体道路店 沖縄", type: "機能服店" },
   { aliases: ["美國村"], mapQuery: "American Village Okinawa", type: "商圈景點" },
   { aliases: ["美濱公共停車場停車＋美國村海側散步"], mapQuery: "美浜公共駐車場 北谷", type: "停車場" },
   { aliases: ["美式雜貨店阿美利肯迪波（American Depot）＋美國村先逛", "美式雜貨店阿美利肯迪波（American Depot）"], mapQuery: "American Depot Chatan Okinawa", type: "購物店" },
