@@ -111,15 +111,15 @@ const tripData = {
         {
           day: "D6",
           date: "6/11（四）",
-          title: "伊亞斯商場午餐、豐崎水族館長版停留、那霸入住",
+          title: "伊亞斯商場午餐、豐崎水族館長版停留、那霸入住與人生酒場",
           items: [
             { time: "09:30-10:00", label: "恩納退房", duration: "約 30 分", desc: "退房後一路往南，不折返。" },
             { time: "11:30-12:30", label: "伊亞斯沖繩豐崎商場（iias）午餐", duration: "約 60 分", desc: "建議先在 伊亞斯商場解決午餐，再進 豐崎水族館，對 8 人一起移動最穩。" },
             { time: "13:00-18:00", label: "豐崎迪艾姆艾姆水族館（DMM Kariyushi）", duration: "約 4-5 小時", desc: "如果 13:00 左右進館，慢慢逛、拍照、看表演與休息，待到傍晚很合理。" },
             { time: "18:30-19:00", label: "入住逸之彩", duration: "約 30 分", desc: "進那霸後轉成市區採買節奏。" },
-            { time: "19:30-21:00", label: "國際通輕鬆散步", duration: "約 60-90 分", desc: "入住後可安排市區散步與晚間自由活動。" }
+            { time: "19:30 後", label: "人生酒場 沖縄店", duration: "彈性", desc: "24H 營業，水族館或入住拖晚也可調整；不想外出就改飯店宵夜拉麵。" }
           ],
-          note: "豐崎水族館為當日主要停留點，整體節奏以從容為主。"
+          note: "D6 白天是換飯店與水族館，晚上用人生酒場作彈性晚餐 / 宵夜。"
         },
         {
           day: "D7",
@@ -129,22 +129,23 @@ const tripData = {
             { time: "09:30-11:00", label: "國際通", duration: "約 1-2 小時", desc: "上午適合安排市區散步，節奏輕鬆。" },
             { time: "11:30-13:30", label: "牧志市場", duration: "約 1.5-2 小時", desc: "適合作為 D7 的主午餐安排，海鮮選擇完整，也方便多人用餐。" },
             { time: "14:00-17:30", label: "瀨長島 Umikaji Terrace", duration: "約 3-4 小時", desc: "下午去最適合，看海、看飛機、散步和喝下午茶都很舒服。" },
-            { time: "18:30-20:30", label: "人生酒場 沖縄店", duration: "約 1.5-2 小時", desc: "那霸松山韓式居酒屋，適合從瀨長島回那霸後晚餐；晚餐後可回飯店或接國際通散步。" }
+            { time: "18:30 後", label: "回飯店 / 國際通輕鬆收尾", duration: "彈性", desc: "中午已是牧志市場主餐，晚上不再排正式大餐。" }
           ],
-          note: "D7 以市場午餐、海邊散步與那霸晚餐為主，整體節奏輕鬆。"
+          note: "D7 保留大家期待的牧志市場海鮮；晚上只留輕食、宵夜或自由活動。"
         },
         {
           day: "D8",
           date: "6/13（六）",
           title: "晚回班機日：輕鬆收尾再返台",
           items: [
-            { time: "10:00-10:20", label: "飯店退房", duration: "約 20 分", desc: "晚回班機日，上午仍保有彈性時間。" },
-            { time: "10:30-12:30", label: "市區輕鬆補逛 / 咖啡", duration: "約 2 小時", desc: "可在國際通或飯店周邊慢慢收尾，讓後段交通更從容。" },
-            { time: "13:00-15:30", label: "阿希比娜暢貨中心（Ashibinaa Outlet）", duration: "約 2-2.5 小時", desc: "安排回程日前的最後採買，並預留較保守的交通緩衝。" },
+            { time: "10:00-10:30", label: "飯店退房", duration: "約 30 分", desc: "兩台車自駕，退房後行李可放車上，不影響後續午餐與採買。" },
+            { time: "10:30-11:15", label: "市區輕鬆補逛 / 咖啡", duration: "約 45 分", desc: "視整理速度短停，也可直接前往午餐。" },
+            { time: "11:30-13:00", label: "燒肉本部牧場 那霸店", duration: "約 90 分", desc: "返台日前正式午餐，建議訂 11:30 或 12:00，避免壓縮還車前採買。" },
+            { time: "13:15-15:30", label: "阿希比娜暢貨中心（Ashibinaa Outlet）", duration: "約 2-2.5 小時", desc: "吃完午餐後往豐崎最後採買，並預留較保守的交通緩衝。" },
             { time: "16:00-16:30", label: "歸還兩台租車", duration: "約 30 分", desc: "前往 租車臨空豐崎營業所（那霸機場）還車。" },
             { time: "20:10", label: "長榮 BR185 那霸返台", duration: "20:10 起飛", desc: "晚回班機，出發前請再確認該日是否營運。" }
           ],
-          note: `最後一天保留市區與採買彈性。<br>機場時間可搭配 <a class="inline-link" href="https://www.naha-airport.co.jp/en/flight/security/" target="_blank" rel="noreferrer">那霸機場官方安檢說明</a> 一起看；目前採較保守抓法，建議 16:30 前完成還車。`
+          note: `最後一天加入燒肉本部牧場那霸店午餐，午餐後接豐崎採買與還車。<br>機場時間可搭配 <a class="inline-link" href="https://www.naha-airport.co.jp/en/flight/security/" target="_blank" rel="noreferrer">那霸機場官方安檢說明</a> 一起看；目前採較保守抓法，建議 16:30 前完成還車。`
         }
       ]
     }
@@ -432,7 +433,13 @@ const tripData = {
           name: "人生酒場 沖縄店",
           badges: ["food", "rainy"],
           distance: "那霸松山，距離逸之彩約 5-10 分鐘車程",
-          description: "韓式居酒屋，適合 D7 從瀨長島回那霸後安排晚餐。"
+          description: "24H 韓式居酒屋，適合 D6 入住那霸後作彈性晚餐 / 宵夜。"
+        },
+        {
+          name: "燒肉本部牧場 那霸店",
+          badges: ["food", "rainy"],
+          distance: "那霸久茂地，D8 退房後可接午餐",
+          description: "本部牛燒肉，適合 D8 返台日前午餐；吃完接阿希比娜與還車動線。"
         },
         {
           name: "榮町市場",
@@ -500,6 +507,7 @@ const placeCatalog = [
   { aliases: ["浜屋沖繩麵"], mapQuery: "浜屋 沖縄そば 北谷", type: "沖繩麵店" },
   { aliases: ["唐吉訶德國際通店"], mapQuery: "Don Quijote Kokusai Dori Naha", type: "折扣商店" },
   { aliases: ["人生酒場 沖縄店"], mapQuery: "人生酒場 沖縄店 那覇市松山2-9-6", type: "韓式居酒屋" },
+  { aliases: ["燒肉本部牧場 那霸店"], mapQuery: "Yakiniku Motobu Farm Naha Kumoji Okinawa", type: "燒肉餐廳" },
   { aliases: ["前兼久漁港"], mapQuery: "Maeganeku Fishing Port Okinawa", type: "漁港" },
   { aliases: ["老虎海灘（飯店海灘）"], mapQuery: "Tiger Beach Onna Okinawa", type: "飯店海灘" },
   { aliases: ["飯店設施活動"], mapQuery: "Hotel Monterey Okinawa Spa and Resort", type: "飯店活動" },
@@ -783,7 +791,7 @@ async function setupPwaSupport() {
   }
 
   try {
-    await navigator.serviceWorker.register("./sw.js?v=2026-04-09-1");
+    await navigator.serviceWorker.register("./sw.js?v=2026-06-01-2");
   } catch (error) {
     console.error("Service worker registration failed:", error);
     if (installStatus && !isStandalone) {
