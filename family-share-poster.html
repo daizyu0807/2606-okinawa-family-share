@@ -148,6 +148,96 @@
         color: var(--blue-deep);
       }
 
+      .weather-summary {
+        padding: 16px 18px 18px;
+        border-top: 3px solid var(--line);
+        background: linear-gradient(180deg, #f3fbff 0%, #fff8e8 100%);
+      }
+
+      .section-heading {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
+      .section-heading h2 {
+        margin: 0;
+        font-size: 1.6rem;
+        line-height: 1.2;
+      }
+
+      .section-heading span {
+        color: #54666b;
+        font-size: 0.92rem;
+        font-weight: 800;
+      }
+
+      .weather-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .weather-card {
+        border: 2px solid var(--line);
+        border-radius: 16px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.84);
+      }
+
+      .weather-card h3 {
+        margin: 0;
+        padding: 8px 10px;
+        border-bottom: 2px solid var(--line);
+        background: #fff1c9;
+        color: #2b3552;
+        font-size: 1rem;
+      }
+
+      .weather-versions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .weather-version {
+        padding: 9px 10px 10px;
+        font-size: 0.88rem;
+        line-height: 1.45;
+      }
+
+      .weather-version + .weather-version {
+        border-left: 1px solid var(--soft-line);
+      }
+
+      .weather-version strong {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 0.82rem;
+      }
+
+      .weather-version--sunny strong { color: #bd5f1f; }
+      .weather-version--rainy strong { color: #2454a3; }
+
+      .main-table-heading {
+        padding: 14px 18px 8px;
+        border-top: 3px solid var(--line);
+        background: #fff3df;
+      }
+
+      .main-table-heading h2 {
+        margin: 0;
+        font-size: 1.45rem;
+      }
+
+      .main-table-heading p {
+        margin: 4px 0 0;
+        color: #56666b;
+        font-size: 0.9rem;
+        font-weight: 800;
+      }
+
       table {
         width: 100%;
         border-collapse: collapse;
@@ -265,7 +355,8 @@
         .sheet { width: calc(100vw - 16px); border-radius: 18px; }
         .speech { position: static; margin: 12px auto 0; }
         .meta-strip,
-        .notes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .notes,
+        .weather-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
         .table-wrap { overflow-x: auto; }
         table { min-width: 1120px; }
       }
@@ -476,6 +567,53 @@
           border-top-width: 2px;
         }
 
+        .weather-summary {
+          padding: 14px 12px 16px;
+          border-top-width: 2px;
+        }
+
+        .section-heading {
+          display: block;
+        }
+
+        .section-heading h2 {
+          font-size: 1.25rem;
+        }
+
+        .section-heading span {
+          display: block;
+          margin-top: 4px;
+          font-size: 0.82rem;
+          line-height: 1.45;
+        }
+
+        .weather-grid {
+          grid-template-columns: 1fr;
+          gap: 8px;
+        }
+
+        .weather-card {
+          border-radius: 12px;
+        }
+
+        .weather-versions {
+          grid-template-columns: 1fr;
+        }
+
+        .weather-version + .weather-version {
+          border-top: 1px solid var(--soft-line);
+          border-left: 0;
+        }
+
+        .main-table-heading {
+          padding: 14px 12px 6px;
+          border-top-width: 2px;
+        }
+
+        .main-table-heading h2 {
+          font-size: 1.2rem;
+        }
+
         .note-card {
           padding: 11px 12px;
           border-width: 2px;
@@ -527,7 +665,7 @@
           <div class="mascot right" aria-hidden="true">🏝️</div>
         </div>
 
-        <div class="speech">照這張走就好<br />吃玩住一次看懂</div>
+        <div class="speech">照這張走就好<br />晴雨天一次看懂</div>
 
         <div class="meta-strip">
           <article class="meta-card">
@@ -555,6 +693,75 @@
         </div>
       </section>
 
+      <section class="weather-summary" aria-label="晴天雨天版本速查">
+        <div class="section-heading">
+          <h2>晴天版 / 雨天版速查</h2>
+          <span>晴天照主行程走；雨勢明顯時，直接切右欄，不硬排戶外海景。</span>
+        </div>
+        <div class="weather-grid">
+          <article class="weather-card">
+            <h3>D1 6/6（六）抵達北谷</h3>
+            <div class="weather-versions">
+              <div class="weather-version weather-version--sunny"><strong>晴天版</strong>取車、帕爾科商場採買、入住北谷，晚上接美國村海邊散步與週六煙火。</div>
+              <div class="weather-version weather-version--rainy"><strong>雨天版</strong>取車後以帕爾科商場與公寓為主，晚餐自炊或美國村室內餐廳，不把煙火當必要行程。</div>
+            </div>
+          </article>
+          <article class="weather-card">
+            <h3>D2 6/7（日）北谷商圈</h3>
+            <div class="weather-versions">
+              <div class="weather-version weather-version--sunny"><strong>晴天版</strong>美國村、二手街、WORKMAN，下午日落海灘與海邊散步。</div>
+              <div class="weather-version weather-version--rainy"><strong>雨天版</strong>保留美國村室內店舖、二手街與餐廳；取消日落海灘散步，雨大改溫泉或回公寓。</div>
+            </div>
+          </article>
+          <article class="weather-card">
+            <h3>D3 6/8（一）移動到恩納</h3>
+            <div class="weather-versions">
+              <div class="weather-version weather-version--sunny"><strong>晴天版</strong>退房後座喜味城跡短走，午餐後入住恩納，傍晚釣魚與谷茶海岸分流。</div>
+              <div class="weather-version weather-version--rainy"><strong>雨天版</strong>取消座喜味與釣魚，午餐後直接往飯店，改 Blue Reef、溫泉、工藝體驗或房間休息。</div>
+            </div>
+          </article>
+          <article class="weather-card">
+            <h3>D4 6/9（二）飯店玩水日</h3>
+            <div class="weather-versions">
+              <div class="weather-version weather-version--sunny"><strong>晴天版</strong>老虎海灘、戶外泳池、飯店午餐休息，傍晚殘波岬短停，晚餐回飯店。</div>
+              <div class="weather-version weather-version--rainy"><strong>雨天版</strong>改 Blue Reef、溫泉與館內休息，午後琉球村或體驗王國むら咲むら，晚餐留飯店。</div>
+            </div>
+          </article>
+          <article class="weather-card">
+            <h3>D5 6/10（三）恩納彈性日</h3>
+            <div class="weather-versions">
+              <div class="weather-version weather-version--sunny"><strong>晴天版</strong>飯店自由活動、真榮田岬短停、恩納之驛午餐與琉冰、午後沖繩鐘乳洞。</div>
+              <div class="weather-version weather-version--rainy"><strong>雨天版</strong>真榮田岬取消，改恩納之驛、沖繩鐘乳洞、文化情報中心與恩納村博物館。</div>
+            </div>
+          </article>
+          <article class="weather-card">
+            <h3>D6 6/11（四）南下那霸</h3>
+            <div class="weather-versions">
+              <div class="weather-version weather-version--sunny"><strong>晴天版</strong>恩納退房後到 iias 午餐，豐崎 DMM 水族館長停，入住那霸，晚上人生酒場彈性。</div>
+              <div class="weather-version weather-version--rainy"><strong>雨天版</strong>主線幾乎不變，iias 與 DMM 都是室內；雨大晚餐改飯店宵夜拉麵。</div>
+            </div>
+          </article>
+          <article class="weather-card">
+            <h3>D7 6/12（五）那霸市區</h3>
+            <div class="weather-versions">
+              <div class="weather-version weather-version--sunny"><strong>晴天版</strong>國際通、牧志市場海鮮午餐，下午瀨長島 Umikaji Terrace 看海與飛機。</div>
+              <div class="weather-version weather-version--rainy"><strong>雨天版</strong>保留牧志市場，取消瀨長島，改唐吉訶德國際通店、甜點休息與市區室內採買。</div>
+            </div>
+          </article>
+          <article class="weather-card">
+            <h3>D8 6/13（六）返台日</h3>
+            <div class="weather-versions">
+              <div class="weather-version weather-version--sunny"><strong>晴天版</strong>退房、燒肉本部牧場午餐、阿希比娜重點採買，16:00 前完成還車。</div>
+              <div class="weather-version weather-version--rainy"><strong>雨天版</strong>午餐與還車節奏不變，縮短補逛與採買；16:30 抵達機場、機場緩衝優先。</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="main-table-heading">
+        <h2>晴天版主行程</h2>
+        <p>下方是天氣可行時的完整摘要；雨天請依上方速查切換。</p>
+      </section>
       <div class="table-wrap">
         <table aria-label="沖繩家族旅遊海報式行程表">
           <colgroup>
@@ -639,6 +846,99 @@
               <td><ul><li>上午退房後短暫市區補逛 / 咖啡</li><li>11:30 燒肉本部牧場 那霸店午餐</li><li>13:10-15:00 阿希比娜暢貨中心（Ashibinaa Outlet）重點採買</li><li>16:00 前完成還車並搭接駁</li><li>16:30 抵達那霸機場</li><li>16:30-19:15 報到、托運、安檢</li><li>19:55 BR185 從那霸返台</li></ul></td>
               <td><ul><li>午餐：燒肉本部牧場 那霸店</li><li>下午視採買節奏簡單吃</li><li>上機前預留托運與出境時間</li></ul></td>
               <td><span class="stay-badge">返台</span><strong>當日離境</strong><br />那霸機場出發，晚上回到台灣。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <section class="main-table-heading">
+        <h2>雨天版主行程</h2>
+        <p>雨勢明顯時以室內、商場、飯店設施與保守移動為主。</p>
+      </section>
+      <div class="table-wrap">
+        <table aria-label="沖繩家族旅遊雨天版海報式行程表">
+          <colgroup>
+            <col style="width: 8.5%" />
+            <col style="width: 19%" />
+            <col style="width: 12.5%" />
+            <col style="width: 26%" />
+            <col style="width: 14%" />
+            <col style="width: 20%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>行程重點</th>
+              <th>交通</th>
+              <th>景點 / 活動</th>
+              <th>吃什麼</th>
+              <th>住宿</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/6</span><span class="date-sub">六</span></td>
+              <td><p class="focus-title">抵達後穩住節奏<br />商場＋公寓</p><div class="small">雨天不把煙火當必要行程。</div><span class="emoji-line">✈️🛒☔</span></td>
+              <td><span class="transport-badge">機場接駁 + 自駕</span><ul><li>那霸機場取兩台車</li><li>直接走商場與住宿動線</li><li>減少多點上下車</li></ul></td>
+              <td><ul><li>09:15 抵達那霸，租車取車</li><li>帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）採買、雨具補給與休息</li><li>入住北谷美濱公寓（Lapin Mihama Residence Hotel）</li><li>若煙火取消或雨勢明顯，直接回房休息</li></ul></td>
+              <td><ul><li>午餐：機場或帕爾科商場簡餐</li><li>晚餐：公寓開伙或美國村室內餐廳</li></ul></td>
+              <td><span class="stay-badge">6/6 - 6/8</span><strong>北谷美濱公寓（Lapin Mihama Residence Hotel）</strong><br />雨天以公寓整理、休息和自炊最穩。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/7</span><span class="date-sub">日</span></td>
+              <td><p class="focus-title">北谷室內購物<br />餐廳候選</p><div class="small">取消日落海灘散步。</div><span class="emoji-line">🛍️🍽️☔</span></td>
+              <td><span class="transport-badge">短程自駕 + 室內移動</span><ul><li>美濱公共停車場集合</li><li>美國村室內店舖為主</li><li>雨大改溫泉或回公寓</li></ul></td>
+              <td><ul><li>美式雜貨店阿美利肯迪波（American Depot）</li><li>美國村室內店舖與商圈</li><li>二手街北谷店（2nd STREET）</li><li>沃克曼Plus 北谷國體道路店（WORKMAN Plus）</li><li>雨勢太大改北谷溫泉泳池 ちゅらーゆ</li></ul></td>
+              <td><ul><li>午餐：美國村名店候選</li><li>88 牛排館或 Tony Roma's 優先看座位</li><li>晚餐：北谷港海邊餐廳 / 自炊</li></ul></td>
+              <td><span class="stay-badge">北谷第二晚</span><strong>北谷美濱公寓（Lapin Mihama Residence Hotel）</strong><br />不硬跑戶外，保留回房彈性。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/8</span><span class="date-sub">一</span></td>
+              <td><p class="focus-title">移動日降載<br />飯店設施休息</p><div class="small">取消座喜味與釣魚分流。</div><span class="emoji-line">🚗🏨☔</span></td>
+              <td><span class="transport-badge">北谷 → 恩納</span><ul><li>退房後確認行李防水</li><li>午餐後直接往飯店附近</li><li>不加戶外點</li></ul></td>
+              <td><ul><li>北谷退房</li><li>午餐後抵達飯店附近 / 寄放行李</li><li>15:00 飯店辦理入住</li><li>Blue Reef 室內泳池、溫泉、三溫暖</li><li>館內工藝體驗或房間休息</li></ul></td>
+              <td><ul><li>午餐：三線の花（浜之家備案）</li><li>晚餐：21:00 琉球之牛燒肉 恩納別館</li><li>預約 ID：FTNSLF</li></ul></td>
+              <td><span class="stay-badge">6/8 - 6/11</span><strong>沖繩蒙特利海景度假酒店</strong><br />雨天先切回飯店整理雨具與休息。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/9</span><span class="date-sub">二</span></td>
+              <td><p class="focus-title">飯店室內<br />琉球村</p><div class="small">取消戶外浮潛與殘波岬。</div><span class="emoji-line">🏨🎨☔</span></td>
+              <td><span class="transport-badge">飯店內 + 短程自駕</span><ul><li>上午先留飯店</li><li>下午短程去琉球村</li><li>不想移動就留館內</li></ul></td>
+              <td><ul><li>Blue Reef 室內泳池、溫泉、三溫暖</li><li>館內休息或工藝體驗</li><li>午後琉球村</li><li>可加體驗王國むら咲むら</li><li>晚上回飯店收尾</li></ul></td>
+              <td><ul><li>午餐：飯店午餐 / 三線の花候選</li><li>晚餐：飯店晚餐或館內用餐</li></ul></td>
+              <td><span class="stay-badge">恩納第二晚</span><strong>沖繩蒙特利海景度假酒店</strong><br />室內設施和文化體驗為主。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/10</span><span class="date-sub">三</span></td>
+              <td><p class="focus-title">恩納之驛<br />鐘乳洞＋室內文化點</p><div class="small">取消真榮田岬海邊短走。</div><span class="emoji-line">🍍🪨☔</span></td>
+              <td><span class="transport-badge">恩納村短程自駕</span><ul><li>飯店 → 恩納之驛</li><li>恩納之驛 → 沖繩鐘乳洞</li><li>文化情報中心與博物館短停</li></ul></td>
+              <td><ul><li>早上飯店自由活動</li><li>恩納之驛午餐、小吃與琉冰</li><li>沖繩鐘乳洞</li><li>恩納村文化情報中心</li><li>有體力再接恩納村博物館</li></ul></td>
+              <td><ul><li>午餐＋甜點：恩納之驛</li><li>晚餐：飯店自助晚餐</li><li>外食備案：三線の花需先訂位</li></ul></td>
+              <td><span class="stay-badge">恩納第三晚</span><strong>沖繩蒙特利海景度假酒店</strong><br />雨天外出後回飯店用餐最穩。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/11</span><span class="date-sub">四</span></td>
+              <td><p class="focus-title">豐崎商場<br />水族館主線</p><div class="small">這天本來就很適合雨天。</div><span class="emoji-line">🚗🐠☔</span></td>
+              <td><span class="transport-badge">恩納 → 豐崎 → 那霸</span><ul><li>恩納退房後直接南下</li><li>iias 與 DMM 同區停車</li><li>傍晚入住那霸</li></ul></td>
+              <td><ul><li>恩納退房</li><li>iias 沖繩豐崎美食街午餐</li><li>豐崎迪艾姆艾姆水族館（DMM Kariyushi）</li><li>入住逸之彩</li><li>雨大晚上不外出</li></ul></td>
+              <td><ul><li>午餐：iias 沖繩豐崎美食街</li><li>晚餐：飯店宵夜拉麵 / 人生酒場</li></ul></td>
+              <td><span class="stay-badge">6/11 - 6/13</span><strong>沖繩逸之彩飯店</strong><br />進那霸後先整理行李與雨具。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/12</span><span class="date-sub">五</span></td>
+              <td><p class="focus-title">牧志市場<br />國際通室內收尾</p><div class="small">取消瀨長島海邊行程。</div><span class="emoji-line">🍱🛍️☔</span></td>
+              <td><span class="transport-badge">步行 + 市區短移動</span><ul><li>飯店步行到國際通 / 牧志</li><li>只走可快速進店的路線</li><li>雨大就延後出門</li></ul></td>
+              <td><ul><li>國際通</li><li>第一牧志公設市場海鮮午餐</li><li>唐吉訶德國際通店</li><li>琉球美麗雪 那霸國際通店</li><li>晚餐簡單分流或回飯店宵夜</li></ul></td>
+              <td><ul><li>午餐：第一牧志公設市場</li><li>晚餐：暖暮 / 國際通輕食 / 飯店宵夜</li></ul></td>
+              <td><span class="stay-badge">那霸第二晚</span><strong>沖繩逸之彩飯店</strong><br />雨天以市區室內採買與休息為主。</td>
+            </tr>
+            <tr>
+              <td class="date-cell"><span class="date-main">6/13</span><span class="date-sub">六</span></td>
+              <td><p class="focus-title">返台日<br />商場與機場緩衝</p><div class="small">縮短補逛，機場時間優先。</div><span class="emoji-line">🥩🛍️✈️</span></td>
+              <td><span class="transport-badge">那霸市區 + 機場還車</span><ul><li>退房後行李放車上</li><li>雨大直接去午餐</li><li>15:00 前離開阿希比娜</li><li>16:00 前完成還車</li></ul></td>
+              <td><ul><li>飯店退房</li><li>市區補逛視雨勢縮短或取消</li><li>11:30 燒肉本部牧場 那霸店午餐</li><li>阿希比娜暢貨中心（Ashibinaa Outlet）重點採買</li><li>15:20-16:00 還車 / 搭接駁</li><li>16:30 抵達那霸機場</li><li>16:30-19:15 報到、托運、安檢</li><li>19:55 BR185 從那霸返台</li></ul></td>
+              <td><ul><li>午餐：燒肉本部牧場 那霸店</li><li>機場內晚餐或補買伴手禮</li></ul></td>
+              <td><span class="stay-badge">返台</span><strong>當日離境</strong><br />雨天以還車與機場緩衝優先。</td>
             </tr>
           </tbody>
         </table>
