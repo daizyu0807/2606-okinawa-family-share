@@ -31,10 +31,10 @@ const tripData = {
           items: [
             { time: "06:45", label: "長榮 BR112 台北桃園出發", duration: "06:45 起飛", desc: "早班機，建議 04:45 前抵達桃園二航廈。" },
             { time: "09:15-10:30", label: "那霸機場取車", duration: "約 60 分", desc: "09:15 抵達後前往 租車臨空豐崎營業所（那霸機場）領兩台車。" },
-            { time: "11:00-12:30", label: "機場或沿途簡單午餐", duration: "約 60-90 分", desc: "第一天不塞景點，先讓大家補體力再北上。" },
-            { time: "13:10-15:25", label: "浦添帕爾科商場（SAN-A PARCO CITY）", duration: "約 2 小時 15 分", desc: "一次完成食材、飲料、早餐麵包與生活用品採買，也可順手用餐、休息與看海。" },
+            { time: "11:00-12:30", label: "午餐：機場或帕爾科商場簡餐", duration: "約 60-90 分", desc: "8 人先以好停車、好集合為原則；若時間順，就到帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）用美食街或餐廳。" },
+            { time: "13:10-15:25", label: "帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）", duration: "約 2 小時 15 分", desc: "一次完成食材、飲料、早餐麵包與生活用品採買，也可順手用餐、休息與看海。" },
             { time: "16:00-16:30", label: "入住北谷美濱公寓（Lapin Mihama Residence Hotel）", duration: "約 30 分", desc: "安頓行李、分配房間與停車。" },
-            { time: "18:00-19:00", label: "公寓開伙晚餐或美國村簡單覓食", duration: "約 60 分", desc: "以恢復體力為主，晚餐後直接接煙火動線最順。" },
+            { time: "18:00-19:00", label: "晚餐：公寓開伙 / 美國村室內餐廳", duration: "約 60 分", desc: "主選公寓開伙；若外食，以美國村步行可達餐廳為主，不另外開車找店，晚餐後直接接煙火動線。" },
             { time: "19:15-19:50", label: "美國村海邊散步＋卡位", duration: "約 30 分", desc: "建議往海邊步道 或 美國村海側移動，提早找好全家一起看的位置。" },
             { time: "20:00-20:10", label: "北谷西海岸週六煙火", duration: "約 3-10 分", desc: "常態週六晚間施放；仍建議出發前 1-3 天確認官方公告與天氣。" },
             { time: "20:10 後", label: "步行回飯店休息", duration: "彈性", desc: "D1 以輕鬆收尾，美國村正式慢逛留給 D2。" }
@@ -48,10 +48,11 @@ const tripData = {
           items: [
             { time: "09:30-10:00", label: "美濱公共停車場停車＋美國村海側散步", duration: "約 30 分", desc: "週日先把車停好，後續以步行和分流為主，降低 8 人找車位與集合壓力。" },
             { time: "10:00-11:00", label: "美式雜貨店阿美利肯迪波（American Depot）＋美國村先逛", duration: "約 60 分", desc: "10:00 開門的逛街型名店，不用排座位，適合等午餐前先逛。" },
-            { time: "11:00-12:15", label: "美國村名店午餐候選", duration: "約 75 分", desc: "優先看 88 牛排館（Steak House 88） 或 東尼羅馬美式肋排（Tony Roma's）；若想在地口味可改塔可飯咖啡奇吉姆那（タコライスCafe きじむなぁ） 或鶴小沖繩麵（そば家 鶴小）。" },
+            { time: "11:00-12:15", label: "午餐：美國村名店候選", duration: "約 75 分", desc: "主選 88 牛排館（Steak House 88）或東尼羅馬美式肋排（Tony Roma's），座位較適合 8 人；若想在地口味，改塔可飯咖啡奇吉姆那（タコライスCafe きじむなぁ）或鶴小沖繩麵（そば家 鶴小）。" },
             { time: "12:30-13:45", label: "二手街北谷店（2nd STREET）", duration: "約 60-75 分", desc: "主力二手挖寶點，依停車與體力決定是否全員同行。" },
             { time: "13:45-14:30", label: "沃克曼Plus 北谷國體道路店（WORKMAN Plus）", duration: "約 30-45 分", desc: "機能服、涼感衣、雨衣、防曬與鞋襪採買備案；停車約 10 台，現場不好停就跳過。" },
-            { time: "14:00-15:30", label: "美國村慢逛＋日落海灘散步", duration: "約 90 分", desc: "商圈、伴手禮和海邊景色一起排，不硬塞甜點店。" }
+            { time: "14:45-16:30", label: "美國村慢逛＋日落海灘散步", duration: "約 90-105 分", desc: "商圈、伴手禮和海邊景色一起排，不硬塞甜點店；若停車或體力不順，就直接回公寓休息。" },
+            { time: "18:00 後", label: "晚餐：自炊 / 北谷港海邊餐廳候選", duration: "彈性", desc: "主選公寓自炊；若想外食，可看北谷港海邊餐廳（Chatan Harbor）或美國村室內餐廳。8 人外食先看座位與停車，不追排隊店。" }
           ],
           note: "重心完全放在北谷；餐廳用候選方式處理，避免 8 人被單一排隊名店卡住。"
         }
@@ -68,12 +69,12 @@ const tripData = {
           items: [
             { time: "10:00-10:30", label: "北谷退房", duration: "約 30 分", desc: "整理行李後先接順路登高散步點。" },
             { time: "10:40-11:50", label: "座喜味城跡", duration: "約 60-70 分", desc: "北谷到恩納途中順路短走，媽媽可登高散步；爸爸可短走或在入口附近休息。" },
-            { time: "12:00-13:15", label: "讀谷 / 恩納方向午餐", duration: "約 60-75 分", desc: "午餐後再往飯店移動，不硬塞更多景點。" },
+            { time: "12:00-13:15", label: "午餐：三線の花（浜之家備案）", duration: "約 60-75 分", desc: "主選純沖繩料理 三線の花，適合在地料理與家族用餐；若想吃海鮮，改海鮮料理 浜之家。8 人先確認座位與停車。" },
             { time: "14:00-14:30", label: "抵達飯店附近 / 寄放行李", duration: "彈性", desc: "等待 15:00 Check-in，保留緩衝。" },
             { time: "15:00-15:30", label: "飯店辦理入住", duration: "約 30 分", desc: "先進房休息，切成度假節奏。" },
             { time: "16:00-18:30", label: "釣の家谷茶め〜", duration: "約 2-3 小時", desc: "可在這裡租借釣具釣魚，並搭配谷茶海岸附近散步。" },
             { time: "16:00-17:00", label: "谷茶海岸", duration: "約 45-60 分", desc: "近距離散步海岸，適合看海與短暫停留。" },
-            { time: "21:00-23:00", label: "琉球之牛燒肉 恩納別館", duration: "約 2 小時", desc: "已預約，預約 ID：FTNSLF。座位提供 2 小時，入住飯店名稱填 沖繩蒙特利飯店。" }
+            { time: "21:00-23:00", label: "晚餐：琉球之牛燒肉 恩納別館", duration: "約 2 小時", desc: "已預約，預約 ID：FTNSLF。座位提供 2 小時，入住飯店名稱填 沖繩蒙特利飯店。" }
           ],
           note: "6/8 以順路短走、入住、分流活動與已預約晚餐為主；座喜味只抓短版，不再加其他讀谷點。"
         },
@@ -82,23 +83,25 @@ const tripData = {
           date: "6/9（二）",
           title: "飯店浮潛優先，殘波岬短停",
           items: [
-            { time: "09:30-11:30", label: "飯店浮潛", duration: "約 90-120 分", desc: "先以蒙特利飯店的私人沙灘與近距離下水活動為主，節奏最輕鬆。" },
-            { time: "11:30-13:00", label: "飯店設施活動", duration: "約 60-90 分", desc: "可接泳池、室內設施、體驗工房或單純回房休息，讓恩納段保有度假節奏。" },
-            { time: "15:00-16:00", label: "回房休息 / 飯店設施", duration: "約 60 分", desc: "玩水後先休息，不再安排遠程山上點。" },
-            { time: "16:20-17:20", label: "殘波岬", duration: "約 45 分", desc: "看斷崖海景與燈塔，體力不足可跳過登塔。" }
+            { time: "09:30-11:30", label: "飯店玩水：老虎海灘 / Sunset Garden", duration: "約 90-120 分", desc: "先用飯店旁老虎海灘與戶外泳池群，含波浪池、主泳池、兒童滑水池與 Bubble Hill Pool；海上活動再依海況和現場規定安排。" },
+            { time: "11:30-13:00", label: "午餐：飯店午餐 / 回房休息", duration: "約 60-90 分", desc: "玩水後先吃午餐、沖洗和休息，避免下午體力掉太快；這餐不另外開車找店。" },
+            { time: "15:00-16:00", label: "飯店設施活動：Blue Reef / 體驗工作坊", duration: "約 60 分", desc: "可用 Blue Reef 室內泳池、天然溫泉、三溫暖，或安排風獅爺彩繪、相框製作等約 30-60 分鐘的體驗工作坊。" },
+            { time: "16:20-17:20", label: "殘波岬", duration: "約 45 分", desc: "看斷崖海景與燈塔，體力不足可跳過登塔。" },
+            { time: "18:00-19:00", label: "晚餐：飯店自助晚餐", duration: "約 60 分", desc: "D4 早上玩水、傍晚外出後，晚餐回飯店最穩，避免再找停車與分桌。" }
           ],
-          note: "D4 早上若玩水，下午不安排名護城公園等較耗體力景點；若遇雨天，適合改為琉球村或飯店室內設施。"
+          note: "D4 以飯店玩水、午餐休息與傍晚短程看海為主；若遇雨天，適合改為琉球村或飯店室內設施。"
         },
         {
           day: "D5",
           date: "6/10（三）",
           title: "恩納彈性日：真榮田岬、恩納之驛與沖繩鐘乳洞",
           items: [
-            { time: "09:30-11:00", label: "飯店自由活動", duration: "約 90 分", desc: "這天只安排輕量飯店活動，保留外出體力。" },
+            { time: "09:30-11:00", label: "飯店自由活動：泳池 / 海灘 / Blue Reef", duration: "約 90 分", desc: "這天只安排輕量飯店活動，可選戶外泳池、老虎海灘、室內泳池或溫泉，保留外出體力。" },
             { time: "11:15-12:00", label: "真榮田岬", duration: "約 30-45 分", desc: "只看展望台與海岬步道，不安排青之洞窟下水。" },
-            { time: "12:15-13:30", label: "恩納之驛", duration: "約 60-75 分", desc: "補個芒果冰、海葡萄料理或在地小吃，當成中段休息站很剛好。" },
+            { time: "12:15-13:30", label: "午餐：恩納之驛", duration: "約 60-75 分", desc: "午餐、小吃與琉冰一起解決；停車與座位彈性高，適合 8 人分頭買再集合。" },
             { time: "14:00-15:20", label: "沖繩鐘乳洞", duration: "約 60-90 分", desc: "自然系室內景點，天氣不穩也好安排；從恩納之驛接過去約 20 分鐘。" },
-            { time: "15:30-16:30", label: "返回飯店方向", duration: "約 60 分", desc: "直接回飯店休息，避免傍晚再折返海邊。" }
+            { time: "15:30-16:30", label: "返回飯店方向", duration: "約 60 分", desc: "直接回飯店休息，避免傍晚再折返海邊；若天氣不好，就接 Blue Reef 或館內工藝體驗。" },
+            { time: "18:00-19:00", label: "晚餐：飯店自助晚餐", duration: "約 60 分", desc: "恩納段收尾以飯店晚餐最穩；若大家想外食，三線の花可作備案，但 8 人要先訂位。" }
           ],
           note: "D5 以真榮田岬短停、恩納之驛與沖繩鐘乳洞為主；真榮田岬是萬座毛替代型海岬景點，不安排下水。"
         }
@@ -114,10 +117,10 @@ const tripData = {
           title: "伊亞斯商場午餐、豐崎水族館長版停留、那霸入住與人生酒場",
           items: [
             { time: "09:30-10:00", label: "恩納退房", duration: "約 30 分", desc: "退房後一路往南，不折返。" },
-            { time: "11:30-12:30", label: "伊亞斯沖繩豐崎商場（iias）午餐", duration: "約 60 分", desc: "建議先在 伊亞斯商場解決午餐，再進 豐崎水族館，對 8 人一起移動最穩。" },
+            { time: "11:30-12:30", label: "午餐：iias 沖繩豐崎美食街", duration: "約 60 分", desc: "商場內用餐最穩，A&W、沖繩食堂與其他餐飲可分流；停車和水族館同區，8 人不用再換點。" },
             { time: "13:00-18:00", label: "豐崎迪艾姆艾姆水族館（DMM Kariyushi）", duration: "約 4-5 小時", desc: "如果 13:00 左右進館，慢慢逛、拍照、看表演與休息，待到傍晚很合理。" },
             { time: "18:30-19:00", label: "入住逸之彩", duration: "約 30 分", desc: "進那霸後轉成市區採買節奏。" },
-            { time: "19:30 後", label: "人生酒場 沖縄店", duration: "彈性", desc: "24H 營業，水族館或入住拖晚也可調整；不想外出就改飯店宵夜拉麵。" }
+            { time: "19:30 後", label: "晚餐：人生酒場 / 飯店宵夜拉麵", duration: "彈性", desc: "主選看體力：想外食可去人生酒場，24H 營業；若水族館或入住拖晚，就直接用飯店宵夜拉麵收尾。" }
           ],
           note: "D6 白天是換飯店與水族館，晚上用人生酒場作彈性晚餐 / 宵夜。"
         },
@@ -127,9 +130,9 @@ const tripData = {
           title: "牧志市場海鮮，瀨長島半日",
           items: [
             { time: "09:30-11:00", label: "國際通", duration: "約 1-2 小時", desc: "上午適合安排市區散步，節奏輕鬆。" },
-            { time: "11:30-13:30", label: "牧志市場", duration: "約 1.5-2 小時", desc: "適合作為 D7 的主午餐安排，海鮮選擇完整，也方便多人用餐。" },
+            { time: "11:30-13:30", label: "午餐：第一牧志公設市場", duration: "約 1.5-2 小時", desc: "D7 主餐，1 樓買海鮮、2 樓代客料理；8 人可用桌位處理，比排小店穩。" },
             { time: "14:00-17:30", label: "瀨長島 Umikaji Terrace", duration: "約 3-4 小時", desc: "下午去最適合，看海、看飛機、散步和喝下午茶都很舒服。" },
-            { time: "18:30 後", label: "回飯店 / 國際通輕鬆收尾", duration: "彈性", desc: "中午已是牧志市場主餐，晚上不再排正式大餐。" }
+            { time: "18:30 後", label: "晚餐：國際通輕食 / 飯店宵夜拉麵", duration: "彈性", desc: "中午已是牧志市場主餐，晚上不排正式大餐；可分流吃肉屋ししや、琉球美麗雪、暖暮或回飯店吃宵夜拉麵。" }
           ],
           note: "D7 保留大家期待的牧志市場海鮮；晚上只留輕食、宵夜或自由活動。"
         },
@@ -140,12 +143,14 @@ const tripData = {
           items: [
             { time: "10:00-10:30", label: "飯店退房", duration: "約 30 分", desc: "兩台車自駕，退房後行李可放車上，不影響後續午餐與採買。" },
             { time: "10:30-11:15", label: "市區輕鬆補逛 / 咖啡", duration: "約 45 分", desc: "視整理速度短停，也可直接前往午餐。" },
-            { time: "11:30-13:00", label: "燒肉本部牧場 那霸店", duration: "約 90 分", desc: "返台日前正式午餐，建議訂 11:30 或 12:00，避免壓縮還車前採買。" },
-            { time: "13:15-15:30", label: "阿希比娜暢貨中心（Ashibinaa Outlet）", duration: "約 2-2.5 小時", desc: "吃完午餐後往豐崎最後採買，並預留較保守的交通緩衝。" },
-            { time: "16:00-16:30", label: "歸還兩台租車", duration: "約 30 分", desc: "前往 租車臨空豐崎營業所（那霸機場）還車。" },
-            { time: "20:10", label: "長榮 BR185 那霸返台", duration: "20:10 起飛", desc: "晚回班機，出發前請再確認該日是否營運。" }
+            { time: "11:30-13:00", label: "午餐：燒肉本部牧場 那霸店", duration: "約 90 分", desc: "返台日前正式午餐，建議訂 11:30 或 12:00；8 人先訂位，吃完接阿希比娜與還車動線。" },
+            { time: "13:10-15:00", label: "阿希比娜暢貨中心（Ashibinaa Outlet）", duration: "約 1.5-2 小時", desc: "最後採買只抓重點店，15:00 前離開；若午餐或交通延誤，直接縮短或跳過這段。" },
+            { time: "15:20-16:00", label: "歸還兩台租車 / 搭接駁", duration: "約 40 分", desc: "前往 租車臨空豐崎營業所（那霸機場）還車；目標 16:00 前完成還車並上接駁車。" },
+            { time: "16:30", label: "抵達那霸機場", duration: "目標時間", desc: "以 16:30 抵達機場航廈為目標；若還車或接駁延誤，機場緩衝仍優先。" },
+            { time: "16:30-19:15", label: "報到 / 托運 / 安檢", duration: "約 2.5-3 小時", desc: "航空櫃台、托運、出境安檢、晚餐或補買伴手禮；19:15 前到登機口附近。" },
+            { time: "19:55", label: "長榮 BR185 那霸返台", duration: "19:55 起飛 · 20:30 抵達桃園", desc: "夏季時刻表為 19:55 那霸起飛、20:30 抵達桃園；出發前仍請以訂位紀錄與長榮公告為準。" }
           ],
-          note: `最後一天加入燒肉本部牧場那霸店午餐，午餐後接豐崎採買與還車。<br>機場時間可搭配 <a class="inline-link" href="https://www.naha-airport.co.jp/en/flight/security/" target="_blank" rel="noreferrer">那霸機場官方安檢說明</a> 一起看；目前採較保守抓法，建議 16:30 前完成還車。`
+          note: `BR185 19:55 起飛後，D8 不建議把阿希比娜逛滿；目標 16:00 前完成還車。<br>機場時間可搭配 <a class="inline-link" href="https://www.naha-airport.co.jp/en/flight/security/" target="_blank" rel="noreferrer">那霸機場官方安檢說明</a> 一起看；若午餐或交通延誤，優先保留機場緩衝。`
         }
       ]
     }
@@ -211,13 +216,19 @@ const tripData = {
           description: "美國村內沖繩麵候選，比另行開車去浜屋更適合家庭動線。"
         },
         {
+          name: "グルメ迴轉壽司市場 美浜店",
+          badges: ["food", "rainy"],
+          distance: "美國村內，步行或短程移動",
+          description: "產地直送海鮮迴轉壽司；不接受訂位，尖峰可能排隊，8 人可接受分桌時再排。"
+        },
+        {
           name: "美式雜貨店阿美利肯迪波（American Depot）",
           badges: ["shopping", "rainy"],
           distance: "美國村內",
           description: "10:00 開門的美式雜貨與服飾名店，適合午餐前先逛。"
         },
         {
-          name: "浦添帕爾科商場（SAN-A PARCO CITY）",
+          name: "帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）",
           badges: ["shopping", "rainy"],
           distance: "距離 Lapin 約 25-35 分鐘車程",
           description: "浦添海邊大型商場，適合第一天集中補食材、衣物和日用品。"
@@ -263,6 +274,12 @@ const tripData = {
           badges: ["food", "sunny"],
           distance: "距離飯店約 5-10 分鐘車程",
           description: "海邊啤酒餐廳，適合安排成北谷段的晚餐或傍晚看海用餐。"
+        },
+        {
+          name: "VONGO & ANCHOR",
+          badges: ["food", "sunny"],
+          distance: "美國村海側，步行可達",
+          description: "海景咖啡、早午餐與三明治備案；適合下午分流休息，不作 8 人正式主餐。"
         }
       ]
     },
@@ -281,19 +298,55 @@ const tripData = {
           name: "老虎海灘（飯店海灘）",
           badges: ["sunny"],
           distance: "和飯店同區",
-          description: "恩納段最優先的水上活動基地，先以飯店海灘、浮潛與放鬆為主最順。"
+          description: "恩納段最優先的水上活動基地，官方列有輕艇、浮潛、潛水等海上活動；適合晴天先從飯店內開始，依海況與現場規定調整。"
         },
         {
-          name: "飯店設施活動",
+          name: "Sunset Garden 戶外泳池群",
+          badges: ["sunny"],
+          distance: "和飯店同區",
+          description: "飯店戶外泳池群，包含波浪池、主泳池、兒童滑水池與 Bubble Hill Pool；適合 D4 上午作為 8 人分流玩水主線。"
+        },
+        {
+          name: "Blue Reef 室內泳池與溫泉",
+          badges: ["rainy"],
+          distance: "和飯店同區",
+          description: "室內泳池、兒童滑水池、天然溫泉、三溫暖與健身房都在這裡；雨天或傍晚回飯店後最穩。"
+        },
+        {
+          name: "體驗工作坊 / 海洋工藝",
           badges: ["sunny", "rainy"],
           distance: "和飯店同區",
-          description: "若不想外出，可直接用飯店泳池、室內設施、體驗工房與館內休息撐起半天節奏。"
+          description: "風獅爺彩繪、相框製作、陶藝等約 30-60 分鐘體驗，適合不下水的人或雨天備案；多數需看當日受理時間。"
         },
         {
           name: "恩納之驛",
           badges: ["food", "rainy"],
           distance: "距離飯店約 5-10 分鐘車程",
           description: "恩納村很實用的小吃站，推薦芒果冰、海葡萄料理和在地熟食。"
+        },
+        {
+          name: "純沖繩料理 三線の花",
+          badges: ["food", "rainy"],
+          distance: "恩納村 58 號線周邊，短程車程",
+          description: "海葡萄、島豆腐炒苦瓜、炙燒豬肉與紫地瓜等在地料理；家族與孝親友善，8 人建議先訂位。"
+        },
+        {
+          name: "THE GARLIC SHRIMP",
+          badges: ["food", "sunny"],
+          distance: "恩納海岸線周邊，適合接真榮田岬",
+          description: "蒜味蝦蝦飯備案；可能候位，餐點偏單一，適合分流或外帶加餐。"
+        },
+        {
+          name: "Gajimaru Cafe&Bar",
+          badges: ["food", "rainy"],
+          distance: "真榮田岬周邊",
+          description: "素食塔可飯、島豆腐麻婆拉麵與飲品備案；週五休，適合想吃清爽或素食時分流。"
+        },
+        {
+          name: "海鮮料理 浜之家",
+          badges: ["food", "rainy"],
+          distance: "恩納村仲泊，國道 58 號線周邊",
+          description: "海鮮料理與奶油炸魚備案；停車位不多，8 人建議先確認座位與停車。"
         },
         {
           name: "釣の家谷茶め〜",
@@ -400,6 +453,24 @@ const tripData = {
           description: "可接在 豐崎水族館後補逛、休息或簡單吃點東西，是最順的南下延伸點。"
         },
         {
+          name: "iias 沖繩豐崎美食街",
+          badges: ["food", "rainy"],
+          distance: "豐崎水族館同區，商場內",
+          description: "D6 水族館前後最穩的餐食補位；A&W、塔可飯、牛排與商場餐飲可分流，適合 8 人不同口味。"
+        },
+        {
+          name: "A&W iias 沖繩豐崎店",
+          badges: ["food", "rainy"],
+          distance: "iias 商場內，水族館出口附近",
+          description: "沖繩限定美式漢堡、薯條與 Root Beer；空間寬敞，適合快速補餐。"
+        },
+        {
+          name: "沖繩食堂 やっぱりちゃん イーアス沖縄豊崎店",
+          badges: ["food", "rainy"],
+          distance: "iias 商場內",
+          description: "沖繩蕎麥麵與沖繩雜燴飯備案；表現偏商場餐，優點是動線穩、點餐快。"
+        },
+        {
           name: "阿希比娜暢貨中心（Ashibinaa Outlet）",
           badges: ["shopping", "rainy"],
           distance: "距離 伊亞斯商場 / 豐崎迪艾姆艾姆水族館（DMM Kariyushi） 約 5-10 分鐘車程",
@@ -418,10 +489,49 @@ const tripData = {
           description: "天氣好時很適合看海景、看飛機和簡單散步。"
         },
         {
+          name: "瀨長島 Umikaji Terrace 餐飲群",
+          badges: ["food", "sunny"],
+          forceShow: true,
+          distance: "瀨長島商場內",
+          description: "氾濫漢堡、Kijimuna 塔可飯、冰淇淋與鬆餅等下午茶備案；適合分流，不再排大餐。"
+        },
+        {
           name: "牧志市場",
           badges: ["food", "rainy"],
           distance: "距離逸之彩步行約 10 分鐘",
           description: "早餐與海鮮都好安排，想吃市場感的那霸早晨很適合放這裡。"
+        },
+        {
+          name: "暖暮拉麵 那覇牧志店",
+          badges: ["food", "rainy"],
+          distance: "國際通 / 牧志周邊，步行可達",
+          description: "豚骨拉麵排隊名店；適合晚間分流或宵夜，不適合 8 人正式晚餐。"
+        },
+        {
+          name: "英本沖繩麵（Okinawa Soba EIBUN）",
+          badges: ["food", "rainy"],
+          distance: "壺屋與國際通周邊，步行或短程移動",
+          description: "創意沖繩麵備案；售完為止，若 D7 已排牧志市場就當作替代候選。"
+        },
+        {
+          name: "肉屋ししや",
+          badges: ["food", "rainy"],
+          distance: "國際通市場本通周邊",
+          description: "炙燒和牛握壽司與鐵板燒；外帶小吃比 8 人內用更順。"
+        },
+        {
+          name: "康竜拉麵 國際通周邊",
+          badges: ["food", "rainy"],
+          forceShow: true,
+          distance: "國際通周邊",
+          description: "國際通拉麵備案；名氣較暖暮低，適合宵夜或分流，不作全員正式餐。"
+        },
+        {
+          name: "琉球美麗雪 那霸國際通店",
+          badges: ["food", "rainy"],
+          forceShow: true,
+          distance: "國際通周邊",
+          description: "雪花冰、豆花與炸饅頭甜點備案；台灣口味友善，適合逛街中途冷氣休息。"
         },
         {
           name: "唐吉訶德國際通店",
@@ -458,14 +568,130 @@ const tripData = {
           badges: ["sunny", "food"],
           distance: "距離飯店步行或短程車程可達",
           description: "適合接在牧志市場或國際通之後，作為比較輕鬆的文化散步段。"
-        },
-        {
-          name: "波上宮",
-          badges: ["sunny"],
-          distance: "距離飯店約 10 分鐘車程",
-          description: "短程可完成的市區神社景點，適合和市區行程一起順遊。"
         }
       ]
+    }
+  ]
+};
+
+const rainyScheduleDays = {
+  mihama: [
+    {
+      day: "D1",
+      date: "6/6（六）",
+      title: "雨天版：抵達後先用商場與公寓穩住節奏",
+      items: [
+        { time: "06:45", label: "長榮 BR112 台北桃園出發", duration: "06:45 起飛", desc: "早班機維持原安排，雨具與薄外套放隨身包，落地後先不要排戶外點。" },
+        { time: "09:15-10:30", label: "那霸機場取車", duration: "約 60 分", desc: "取車後直接走商場與住宿動線，避免雨天多點上下車。" },
+        { time: "11:00-12:30", label: "午餐：機場或帕爾科商場簡餐", duration: "約 60-90 分", desc: "以好停車、好集合為原則；若已到帕爾科商場（SAN-A Urasoe West Coast PARCO CITY），直接用美食街或館內餐廳。" },
+        { time: "13:10-15:25", label: "帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）", duration: "約 2 小時 15 分", desc: "用商場完成採買、雨具補給與休息；若午餐還沒吃，這裡就是 D1 最穩餐點。" },
+        { time: "16:00-16:30", label: "入住北谷美濱公寓（Lapin Mihama Residence Hotel）", duration: "約 30 分", desc: "先回房整理濕衣物與行李，讓晚上保留彈性。" },
+        { time: "18:00-19:30", label: "晚餐：公寓開伙 / 美國村室內餐廳", duration: "約 90 分", desc: "雨勢大就自炊；雨小再步行到美國村室內餐廳，8 人不另外開車追店，不硬等煙火。" },
+        { time: "20:00 後", label: "步行回飯店休息", duration: "彈性", desc: "若煙火取消或雨勢明顯，直接回房休息，D2 再看天氣調整。" }
+      ],
+      note: "雨天版 D1 不把煙火當必要行程，核心是順利取車、採買、入住與恢復體力。"
+    },
+    {
+      day: "D2",
+      date: "6/7（日）",
+      title: "雨天版：北谷室內購物與餐廳候選",
+      items: [
+        { time: "09:30-10:00", label: "美濱公共停車場停車＋美國村海側散步", duration: "約 30 分", desc: "雨小才走海側；雨大就只停車集合，直接進商圈。" },
+        { time: "10:00-11:00", label: "美式雜貨店阿美利肯迪波（American Depot）＋美國村先逛", duration: "約 60 分", desc: "以室內店舖與短距離移動為主，減少撐傘移動。" },
+        { time: "11:00-12:15", label: "午餐：美國村名店候選", duration: "約 75 分", desc: "主選 88 牛排館或 Tony Roma's，座位較適合 8 人；若想在地口味，改塔可飯或鶴小沖繩麵。雨天重點是座位與候位，不追戶外景。" },
+        { time: "12:30-13:45", label: "二手街北谷店（2nd STREET）", duration: "約 60-75 分", desc: "雨天很適合排二手店，兩台車分流也好集合。" },
+        { time: "13:45-14:30", label: "沃克曼Plus 北谷國體道路店（WORKMAN Plus）", duration: "約 30-45 分", desc: "補雨衣、防水鞋襪、涼感衣與機能用品；現場不好停就跳過。" },
+        { time: "15:00-16:30", label: "美國村", duration: "約 60-90 分", desc: "雨天仍可逛商圈與室內店舖，只取消日落海灘散步；雨勢太大再改北谷溫泉泳池 ちゅらーゆ。" },
+        { time: "18:00 後", label: "晚餐：北谷港海邊餐廳 / 自炊", duration: "彈性", desc: "雨小可看北谷港海邊餐廳（Chatan Harbor）；雨大就回公寓自炊或美國村室內餐廳。8 人先看座位和停車。"}
+      ],
+      note: "雨天版 D2 保留美國村商圈，只取消日落海灘散步；雨勢太大才切到溫泉或回公寓。"
+    }
+  ],
+  onna: [
+    {
+      day: "D3",
+      date: "6/8（一）",
+      title: "雨天版：移動日降載，入住後直接休息",
+      items: [
+        { time: "10:00-10:30", label: "北谷退房", duration: "約 30 分", desc: "雨天退房先確認行李防水，車上座位與濕物分開放。" },
+        { time: "11:30-13:00", label: "午餐：三線の花（浜之家備案）", duration: "約 60-90 分", desc: "雨天不硬排座喜味；主選純沖繩料理 三線の花，若想吃海鮮再改海鮮料理 浜之家。8 人先確認座位與停車。" },
+        { time: "13:30-14:30", label: "抵達飯店附近 / 寄放行李", duration: "彈性", desc: "午餐後直接往飯店附近移動，雨天不再加戶外點。" },
+        { time: "15:00-15:30", label: "飯店辦理入住", duration: "約 30 分", desc: "提早切回飯店，整理雨具與休息。" },
+        { time: "16:00-18:00", label: "飯店設施活動：Blue Reef / 工藝體驗", duration: "約 2 小時", desc: "改用室內泳池、溫泉、三溫暖、館內工藝體驗或房間休息，不安排釣魚。" },
+        { time: "21:00-23:00", label: "晚餐：琉球之牛燒肉 恩納別館", duration: "約 2 小時", desc: "已預約，預約 ID：FTNSLF；座位 2 小時，雨天提前出門，避免遲到。" }
+      ],
+      note: "雨天版 D3 取消座喜味與釣魚分流，只保留一段明確午餐，把重點放在安全移動、入住與已預約晚餐。"
+    },
+    {
+      day: "D4",
+      date: "6/9（二）",
+      title: "雨天版：飯店室內 + 琉球村",
+      items: [
+        { time: "09:30-11:30", label: "飯店設施活動：Blue Reef / 館內休息", duration: "約 90-120 分", desc: "取消戶外浮潛，改室內泳池、溫泉、三溫暖、工藝體驗或房間休息，先觀察雨勢。" },
+        { time: "11:30-13:00", label: "午餐：飯店午餐 / 三線の花候選", duration: "約 60-90 分", desc: "雨大就留飯店用餐；想吃在地料理可改三線の花，8 人先確認訂位與停車，恩納之驛留給 D5。" },
+        { time: "14:00-16:00", label: "琉球村", duration: "約 90-120 分", desc: "古民家、表演與手作元素集中，是恩納段最穩的雨天備案。" },
+        { time: "16:20-17:20", label: "體驗王國むら咲むら", duration: "約 60 分", desc: "若想再接一個文化型雨備點，可改手作體驗；不想移動就回飯店。" },
+        { time: "18:00 後", label: "晚餐：飯店晚餐 / 館內收尾", duration: "彈性", desc: "晚上回飯店用餐或館內休息，不安排殘波岬，也不再找遠程餐廳。"}
+      ],
+      note: "雨天版 D4 取消浮潛與殘波岬，中午不排恩納之驛，避免和 D5 重複。"
+    },
+    {
+      day: "D5",
+      date: "6/10（三）",
+      title: "雨天版：恩納之驛、鐘乳洞與文化情報中心",
+      items: [
+        { time: "09:30-11:00", label: "飯店自由活動", duration: "約 90 分", desc: "雨天早上不急著出門，先看雨勢與道路狀況。" },
+        { time: "11:15-12:30", label: "午餐：恩納之驛", duration: "約 60-75 分", desc: "午餐、小吃與琉冰都可在這裡解決；停車與分流穩，適合 8 人各自買再集合。" },
+        { time: "13:00-14:30", label: "沖繩鐘乳洞", duration: "約 60-90 分", desc: "自然系室內點，天氣不穩時比海岬更好安排。" },
+        { time: "15:00-16:00", label: "恩納村文化情報中心", duration: "約 45-60 分", desc: "短停補旅遊資訊與看室內展示，雨天不用拉太遠車程。" },
+        { time: "16:00-17:00", label: "恩納村博物館", duration: "約 45-60 分", desc: "若大家還有體力，可接博物館；否則直接回飯店。" },
+        { time: "18:00-19:00", label: "晚餐：飯店自助晚餐", duration: "約 60 分", desc: "D5 雨天外出後回飯店用餐最穩；若想外食，三線の花可作備案但需先訂位。" }
+      ],
+      note: "雨天版 D5 取消真榮田岬海邊短走，改成休息站、鐘乳洞與短程室內文化點。"
+    }
+  ],
+  naha: [
+    {
+      day: "D6",
+      date: "6/11（四）",
+      title: "雨天版：豐崎商場與水族館主線",
+      items: [
+        { time: "09:30-10:00", label: "恩納退房", duration: "約 30 分", desc: "退房後直接南下，雨天不臨時加海邊點。" },
+        { time: "11:30-12:30", label: "午餐：iias 沖繩豐崎美食街", duration: "約 60 分", desc: "在商場內分流用餐，A&W、沖繩食堂與其他餐飲都可選；停車和水族館同區，雨天 8 人最省事。" },
+        { time: "13:00-18:00", label: "豐崎迪艾姆艾姆水族館（DMM Kariyushi）", duration: "約 4-5 小時", desc: "室內主行程，雨天也能穩定停留。" },
+        { time: "18:30-19:00", label: "入住逸之彩", duration: "約 30 分", desc: "進那霸後先整理行李與雨具。" },
+        { time: "19:30 後", label: "晚餐：飯店宵夜拉麵 / 人生酒場", duration: "彈性", desc: "雨大就不外出，利用飯店宵夜拉麵；雨小且大家還有體力，再改人生酒場。"}
+      ],
+      note: "雨天版 D6 幾乎沿用原主線，因為 iias 與 DMM 本來就是最穩的雨天組合。"
+    },
+    {
+      day: "D7",
+      date: "6/12（五）",
+      title: "雨天版：牧志市場與國際通室內收尾",
+      items: [
+        { time: "09:30-11:00", label: "國際通", duration: "約 1-2 小時", desc: "只走有遮蔽、可快速進店的路線，雨大就延後出門。" },
+        { time: "11:30-13:30", label: "午餐：第一牧志公設市場", duration: "約 1.5-2 小時", desc: "市場海鮮午餐保留，雨天也好安排；8 人可用 2 樓桌位，不必分散找小店。" },
+        { time: "14:00-15:30", label: "唐吉訶德國際通店", duration: "約 60-90 分", desc: "把瀨長島改成市區室內採買，避免雨天海邊視野差又難移動。" },
+        { time: "15:30-16:30", label: "琉球美麗雪 那霸國際通店", duration: "約 45-60 分", desc: "甜點與冷氣休息點，適合長輩休息。" },
+        { time: "17:00 後", label: "晚餐：暖暮 / 國際通輕食 / 飯店宵夜", duration: "彈性", desc: "若晚餐想簡單解決，可分流吃暖暮或國際通輕食；雨大就回飯店宵夜，不排正式大餐。" }
+      ],
+      note: "雨天版 D7 取消瀨長島，改國際通、牧志市場與室內採買 / 甜點。"
+    },
+    {
+      day: "D8",
+      date: "6/13（六）",
+      title: "雨天版：返台日維持商場與還車緩衝",
+      items: [
+        { time: "10:00-10:30", label: "飯店退房", duration: "約 30 分", desc: "退房後行李放車上，雨具放容易拿的位置。" },
+        { time: "10:30-11:15", label: "市區輕鬆補逛 / 咖啡", duration: "約 45 分", desc: "雨大就直接去午餐，不在市區多走。" },
+        { time: "11:30-13:00", label: "午餐：燒肉本部牧場 那霸店", duration: "約 90 分", desc: "正式午餐維持，建議訂 11:30 或 12:00；8 人先訂位，吃完接豐崎採買與還車。" },
+        { time: "13:10-15:00", label: "阿希比娜暢貨中心（Ashibinaa Outlet）", duration: "約 1.5-2 小時", desc: "最後採買放在商場，雨天也比較可控；15:00 前離開，避免回程被雨勢和還車排隊壓縮。" },
+        { time: "15:20-16:00", label: "歸還兩台租車 / 搭接駁", duration: "約 40 分", desc: "雨天目標 16:00 前完成還車並上接駁車，保留後續機場緩衝。" },
+        { time: "16:30", label: "抵達那霸機場", duration: "目標時間", desc: "以 16:30 抵達機場航廈為目標；若前段延誤就直接減少採買時間。" },
+        { time: "16:30-19:15", label: "報到 / 托運 / 安檢", duration: "約 2.5-3 小時", desc: "雨天以機場流程優先，完成托運與安檢後再晚餐或補買伴手禮。" },
+        { time: "19:55", label: "長榮 BR185 那霸返台", duration: "19:55 起飛 · 20:30 抵達桃園", desc: "保留接駁、托運與安檢緩衝；出發前仍以訂位紀錄與長榮公告為準。" }
+      ],
+      note: "雨天版 D8 和晴天版差異不大，重點是把還車與機場緩衝抓更保守。"
     }
   ]
 };
@@ -474,7 +700,7 @@ const placeCatalog = [
   { aliases: ["北谷美濱公寓（Lapin Mihama Residence Hotel）", "入住北谷美濱公寓（Lapin Mihama Residence Hotel）"], mapQuery: "Lapin Mihama Residence Hotel", type: "住宿" },
   { aliases: ["沖繩蒙特利海景度假酒店", "沖繩蒙特利海景度假酒店"], mapQuery: "Hotel Monterey Okinawa Spa and Resort", type: "度假飯店" },
   { aliases: ["沖繩逸之彩飯店", "入住逸之彩", "Okinawa Hinode Hotel"], mapQuery: "Okinawa Hinode Hotel", type: "市區飯店" },
-  { aliases: ["浦添帕爾科商場（SAN-A PARCO CITY）", "Parco City"], mapQuery: "San-A Urasoe West Coast PARCO CITY", type: "購物中心" },
+  { aliases: ["帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）", "Parco City"], mapQuery: "San-A Urasoe West Coast PARCO CITY", type: "購物中心" },
   { aliases: ["長榮 BR112 台北桃園出發"], mapQuery: "Taoyuan International Airport Terminal 2", type: "航班" },
   { aliases: ["長榮 BR185 那霸返台"], mapQuery: "Naha Airport", type: "航班" },
   { aliases: ["那霸機場取車"], mapQuery: "OTS 臨空豐岐營業所（那霸機場）", type: "租車" },
@@ -489,6 +715,8 @@ const placeCatalog = [
   { aliases: ["東尼羅馬美式肋排北谷店（Tony Roma's）"], mapQuery: "Tony Roma's Chatan Mihama Okinawa", type: "美式餐廳" },
   { aliases: ["塔可飯咖啡奇吉姆那（タコライスCafe きじむなぁ）"], mapQuery: "タコライスCafe きじむなぁ デポアイランド店 沖縄", type: "塔可飯餐廳" },
   { aliases: ["鶴小沖繩麵美濱店（そば家 鶴小）"], mapQuery: "そば家 鶴小 美浜店 沖縄", type: "沖繩麵店" },
+  { aliases: ["グルメ迴轉壽司市場 美浜店"], mapQuery: "グルメ回転寿司市場 美浜店 北谷 沖縄", type: "迴轉壽司" },
+  { aliases: ["VONGO & ANCHOR"], mapQuery: "VONGO & ANCHOR Chatan Okinawa", type: "海景咖啡" },
   { aliases: ["日落海灘"], mapQuery: "Sunset Beach Chatan Okinawa", type: "海灘" },
   { aliases: ["阿拉哈海灘"], mapQuery: "Araha Beach Okinawa", type: "海灘" },
   { aliases: ["北谷海景散步道"], mapQuery: "Sunset Walk Chatan Okinawa", type: "海景散步街" },
@@ -498,7 +726,15 @@ const placeCatalog = [
   { aliases: ["北谷港海邊餐廳（Chatan Harbor）"], mapQuery: "Chatan Harbor Brewery & Restaurant Okinawa", type: "海邊餐廳" },
   { aliases: ["豐崎迪艾姆艾姆水族館（DMM Kariyushi）"], mapQuery: "豐崎水族館 Kariyushi Aquarium", type: "水族館" },
   { aliases: ["伊亞斯沖繩豐崎商場（iias）"], mapQuery: "iias Okinawa Toyosaki", type: "購物中心" },
+  { aliases: ["iias 沖繩豐崎美食街"], mapQuery: "iias Okinawa Toyosaki food court Tomigusuku Okinawa", type: "商場餐飲" },
+  { aliases: ["A&W iias 沖繩豐崎店"], mapQuery: "A&W iias Okinawa Toyosaki Tomigusuku Okinawa", type: "美式漢堡" },
+  { aliases: ["沖繩食堂 やっぱりちゃん イーアス沖縄豊崎店"], mapQuery: "沖縄食堂 やっぱりちゃん イーアス沖縄豊崎店", type: "沖繩食堂" },
   { aliases: ["牧志市場", "牧志市場早餐"], mapQuery: "Makishi Public Market", type: "市場" },
+  { aliases: ["暖暮拉麵 那覇牧志店"], mapQuery: "暖暮ラーメン 那覇牧志店 沖縄", type: "拉麵店" },
+  { aliases: ["英本沖繩麵（Okinawa Soba EIBUN）"], mapQuery: "Okinawa Soba EIBUN Naha Okinawa", type: "沖繩麵店" },
+  { aliases: ["肉屋ししや"], mapQuery: "肉屋ししや 那覇 牧志 沖縄", type: "和牛小吃" },
+  { aliases: ["康竜拉麵 國際通周邊"], mapQuery: "康竜ラーメン 国際通 那覇 沖縄", type: "拉麵店" },
+  { aliases: ["琉球美麗雪 那霸國際通店"], mapQuery: "琉球美麗雪 那覇 国際通 沖縄", type: "甜點店" },
   { aliases: ["首里城"], mapQuery: "Shuri Castle", type: "歷史景點" },
   { aliases: ["國際通", "國際通晚間自由活動"], mapQuery: "Kokusai Dori Naha", type: "商店街" },
   { aliases: ["壺屋やちむん通"], mapQuery: "Tsuboya Yachimun Street Naha Okinawa", type: "散步街" },
@@ -510,11 +746,17 @@ const placeCatalog = [
   { aliases: ["燒肉本部牧場 那霸店"], mapQuery: "Yakiniku Motobu Farm Naha Kumoji Okinawa", type: "燒肉餐廳" },
   { aliases: ["前兼久漁港"], mapQuery: "Maeganeku Fishing Port Okinawa", type: "漁港" },
   { aliases: ["老虎海灘（飯店海灘）"], mapQuery: "Tiger Beach Onna Okinawa", type: "飯店海灘" },
-  { aliases: ["飯店設施活動"], mapQuery: "Hotel Monterey Okinawa Spa and Resort", type: "飯店活動" },
+  { aliases: ["飯店玩水：老虎海灘 / Sunset Garden", "Sunset Garden 戶外泳池群"], mapQuery: "Hotel Monterey Okinawa Spa and Resort Sunset Garden", type: "飯店泳池" },
+  { aliases: ["飯店設施活動", "飯店設施活動：Blue Reef / 體驗工作坊", "飯店設施活動：Blue Reef / 工藝體驗", "飯店設施活動：Blue Reef / 館內休息", "飯店自由活動：泳池 / 海灘 / Blue Reef", "Blue Reef 室內泳池與溫泉"], mapQuery: "Hotel Monterey Okinawa Spa and Resort Blue Reef", type: "飯店活動" },
+  { aliases: ["體驗工作坊 / 海洋工藝"], mapQuery: "Hotel Monterey Okinawa Spa and Resort activity workshop", type: "飯店體驗" },
   { aliases: ["釣の家谷茶め〜"], mapQuery: "釣の家谷茶め〜 恩納村 谷茶 沖縄", type: "釣具租借" },
   { aliases: ["谷茶海岸"], mapQuery: "谷茶ビーチ 恩納村 沖縄", type: "海岸散步" },
   { aliases: ["琉球之牛燒肉 恩納別館"], mapQuery: "焼肉 琉球の牛 恩納別館 101-1 Maeganeku Onna Okinawa", type: "燒肉餐廳" },
   { aliases: ["恩納之驛"], mapQuery: "Onna no Eki Nakayukui Market", type: "休息站" },
+  { aliases: ["純沖繩料理 三線の花"], mapQuery: "三線の花 恩納村 沖縄", type: "沖繩料理" },
+  { aliases: ["THE GARLIC SHRIMP"], mapQuery: "THE GARLIC SHRIMP Onna Okinawa", type: "蝦蝦飯" },
+  { aliases: ["Gajimaru Cafe&Bar"], mapQuery: "Gajimaru Cafe Bar Maeda Onna Okinawa", type: "素食餐廳" },
+  { aliases: ["海鮮料理 浜之家"], mapQuery: "海鮮料理 浜の家 恩納村 沖縄", type: "海鮮餐廳" },
   { aliases: ["飯店浮潛"], mapQuery: "Hotel Monterey Okinawa Spa and Resort", type: "飯店活動" },
   { aliases: ["青之洞窟浮潛"], mapQuery: "Blue Cave Maeda Misaki Okinawa", type: "浮潛景點" },
   { aliases: ["真榮田岬"], mapQuery: "Cape Maeda Okinawa", type: "海岬景點" },
@@ -530,12 +772,13 @@ const placeCatalog = [
   { aliases: ["阿希比娜暢貨中心（Ashibinaa Outlet）"], mapQuery: "Okinawa Outlet Mall Ashibinaa", type: "暢貨中心" },
   { aliases: ["運動用品店豐崎店（Sports Depo）", "SPORTS DEPO Toyosaki"], mapQuery: "SPORTS DEPO Toyosaki 1-411 Toyosaki Tomigusuku Okinawa", type: "運動用品店" },
   { aliases: ["瀨長島 Umikaji Terrace"], mapQuery: "Senagajima Umikaji Terrace", type: "海景商場" },
-  { aliases: ["榮町市場"], mapQuery: "Sakaemachi Market Naha", type: "市場" },
-  { aliases: ["波上宮"], mapQuery: "Naminoue Shrine", type: "神社" }
+  { aliases: ["瀨長島 Umikaji Terrace 餐飲群"], mapQuery: "Senagajima Umikaji Terrace restaurants Tomigusuku Okinawa", type: "海景餐飲" },
+  { aliases: ["榮町市場"], mapQuery: "Sakaemachi Market Naha", type: "市場" }
 ];
 
 const stayTimeline = document.querySelector("#stay-timeline");
 const dayCardGrid = document.querySelector("#day-card-grid");
+const scheduleModeBar = document.querySelector("#schedule-mode-bar");
 const backupGrid = document.querySelector("#backup-grid");
 const backupFilterBar = document.querySelector("#backup-filter-bar");
 const backupPanel = document.querySelector(".backup-panel");
@@ -544,6 +787,7 @@ const floatingSegmentSwitcher = document.querySelector("#floating-segment-switch
 
 let activeSegmentId = tripData.segments[0].id;
 let activeBackupFilter = "all";
+let activeScheduleMode = "sunny";
 
 function normalizePlaceName(value) {
   return value.replace(/（.*?）/g, "").replace(/\s+/g, "").toLowerCase();
@@ -579,7 +823,59 @@ function renderPlaceType(label) {
 }
 
 function collectScheduledPlaces(segment) {
-  return segment.days.flatMap((day) => day.items.map((item) => normalizePlaceName(item.label)));
+  return getSegmentDays(segment).flatMap((day) => day.items.map((item) => normalizePlaceName(item.label)));
+}
+
+function getSegmentDays(segment) {
+  if (activeScheduleMode === "rainy" && rainyScheduleDays[segment.id]) {
+    return rainyScheduleDays[segment.id];
+  }
+
+  return segment.days;
+}
+
+function renderScheduleModeBar() {
+  if (!scheduleModeBar) {
+    return;
+  }
+
+  const modes = [
+    { id: "sunny", label: "晴天版", note: "戶外景點照原本節奏走。" },
+    { id: "rainy", label: "雨天版", note: "改用室內、商場、飯店設施與雨備點。" }
+  ];
+
+  const activeMode = modes.find((mode) => mode.id === activeScheduleMode);
+
+  scheduleModeBar.innerHTML = `
+    ${modes
+      .map(
+        (mode) => `
+          <button
+            class="schedule-mode-button ${mode.id === activeScheduleMode ? "is-active" : ""}"
+            data-schedule-mode="${mode.id}"
+            type="button"
+            aria-pressed="${mode.id === activeScheduleMode}"
+          >
+            ${mode.label}
+          </button>
+        `
+      )
+      .join("")}
+    <span class="schedule-mode-note">${activeMode?.note ?? ""}</span>
+  `;
+
+  scheduleModeBar.querySelectorAll(".schedule-mode-button").forEach((button) => {
+    button.addEventListener("click", () => {
+      if (!button.dataset.scheduleMode || button.dataset.scheduleMode === activeScheduleMode) {
+        return;
+      }
+      activeScheduleMode = button.dataset.scheduleMode;
+      activeBackupFilter = "all";
+      renderScheduleModeBar();
+      renderDays();
+      renderBackups();
+    });
+  });
 }
 
 function renderStays() {
@@ -660,7 +956,8 @@ function renderFloatingSegmentSwitcher() {
 
 function renderDays() {
   const activeSegment = tripData.segments.find((segment) => segment.id === activeSegmentId);
-  dayCardGrid.innerHTML = activeSegment.days
+  const activeDays = getSegmentDays(activeSegment);
+  dayCardGrid.innerHTML = activeDays
     .map(
       (day) => `
         <article class="day-card">
@@ -694,8 +991,7 @@ function renderBackups() {
     { id: "all", label: "全部" },
     { id: "sunny", label: "晴天優先" },
     { id: "rainy", label: "雨天優先" },
-    { id: "shopping", label: "購物補位" },
-    { id: "food", label: "餐食補位" }
+    { id: "food", label: "美食備案" }
   ];
 
   backupFilterBar.innerHTML = filters
@@ -727,6 +1023,9 @@ function renderBackups() {
           <div class="backup-place-list">
             ${item.places
               .filter((place) => {
+                if (place.forceShow) {
+                  return true;
+                }
                 const normalizedPlace = normalizePlaceName(place.name);
                 return !scheduledPlaces.some(
                   (scheduledPlace) => scheduledPlace.includes(normalizedPlace) || normalizedPlace.includes(scheduledPlace)
@@ -742,9 +1041,11 @@ function renderBackups() {
                           const labels = {
                             sunny: "晴天優先",
                             rainy: "雨天優先",
-                            shopping: "購物補位",
-                            food: "餐食補位"
+                            food: "美食備案"
                           };
+                          if (!labels[badge]) {
+                            return "";
+                          }
                           return `<span class="backup-badge backup-badge--${badge}">${labels[badge]}</span>`;
                         })
                         .join("")}
@@ -765,6 +1066,7 @@ function renderBackups() {
 
 renderStays();
 renderFloatingSegmentSwitcher();
+renderScheduleModeBar();
 renderDays();
 renderBackups();
 
@@ -791,7 +1093,7 @@ async function setupPwaSupport() {
   }
 
   try {
-    await navigator.serviceWorker.register("./sw.js?v=2026-06-01-2");
+    await navigator.serviceWorker.register("./sw.js?v=2026-06-03-airport-arrival");
   } catch (error) {
     console.error("Service worker registration failed:", error);
     if (installStatus && !isStandalone) {

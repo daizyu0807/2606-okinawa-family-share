@@ -270,6 +270,227 @@
         table { min-width: 1120px; }
       }
 
+      @media (max-width: 720px) {
+        body {
+          background: linear-gradient(180deg, #fffaf0 0%, #fff3df 100%);
+        }
+
+        .sheet {
+          width: 100%;
+          margin: 0;
+          border-width: 0;
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .hero {
+          padding: 18px 16px 16px;
+          text-align: left;
+        }
+
+        .title-row {
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 10px;
+        }
+
+        .mascot {
+          flex: 0 0 auto;
+          font-size: 2rem;
+          margin-top: 2px;
+        }
+
+        .mascot.right {
+          display: none;
+        }
+
+        .title-block h1 {
+          font-size: 1.78rem;
+          line-height: 1.08;
+          letter-spacing: 0;
+        }
+
+        .subtitle {
+          margin-top: 8px;
+          font-size: 0.88rem;
+          line-height: 1.45;
+        }
+
+        .speech {
+          max-width: none;
+          margin: 14px 0 0;
+          padding: 10px 12px;
+          border-width: 2px;
+          border-radius: 14px;
+          font-size: 0.95rem;
+          line-height: 1.4;
+        }
+
+        .meta-strip {
+          grid-template-columns: 1fr;
+          gap: 8px;
+          margin-top: 12px;
+        }
+
+        .meta-card {
+          padding: 10px 12px;
+          border-width: 2px;
+          border-radius: 12px;
+          font-size: 0.9rem;
+          line-height: 1.45;
+        }
+
+        .poster-actions {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 8px;
+          margin-top: 12px;
+        }
+
+        .poster-link {
+          width: 100%;
+          min-height: 44px;
+          padding: 10px 12px;
+          border-radius: 12px;
+          font-size: 0.94rem;
+        }
+
+        .table-wrap {
+          overflow: visible;
+          padding: 12px;
+          background: #fff3df;
+        }
+
+        table,
+        tbody,
+        tr,
+        td {
+          display: block;
+          width: 100%;
+        }
+
+        table {
+          min-width: 0;
+          border-collapse: separate;
+          border-spacing: 0;
+        }
+
+        colgroup,
+        thead {
+          display: none;
+        }
+
+        tbody tr {
+          margin-bottom: 14px;
+          border: 2px solid var(--line);
+          border-radius: 18px;
+          overflow: hidden;
+          background: rgba(255, 255, 255, 0.88);
+          box-shadow: 0 8px 20px rgba(37, 48, 80, 0.1);
+        }
+
+        tbody td {
+          position: relative;
+          padding: 12px 14px 14px;
+          border: 0;
+          border-top: 1px solid var(--soft-line);
+          background: rgba(255, 255, 255, 0.9);
+          font-size: 0.96rem;
+          line-height: 1.55;
+        }
+
+        tbody td:first-child {
+          border-top: 0;
+        }
+
+        .date-cell {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          padding: 14px 16px;
+          text-align: left;
+        }
+
+        .date-main {
+          display: inline;
+          font-size: 2.25rem;
+        }
+
+        .date-sub {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 48px;
+          height: 48px;
+          margin-top: 0;
+          border: 2px solid var(--line);
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.72);
+          font-size: 1.35rem;
+        }
+
+        tbody td:not(.date-cell)::before {
+          display: block;
+          margin-bottom: 8px;
+          color: var(--blue-deep);
+          font-size: 0.78rem;
+          font-weight: 900;
+          letter-spacing: 0.08em;
+        }
+
+        tbody td:nth-child(2)::before { content: "行程重點"; }
+        tbody td:nth-child(3)::before { content: "交通"; }
+        tbody td:nth-child(4)::before { content: "景點 / 活動"; }
+        tbody td:nth-child(5)::before { content: "吃什麼"; }
+        tbody td:nth-child(6)::before { content: "住宿"; }
+
+        .focus-title {
+          margin-bottom: 6px;
+          font-size: 1.28rem;
+        }
+
+        .emoji-line {
+          margin-top: 10px;
+          font-size: 1.45rem;
+        }
+
+        .transport-badge,
+        .stay-badge {
+          margin-bottom: 8px;
+          font-size: 0.78rem;
+        }
+
+        ul {
+          padding-left: 1.05em;
+        }
+
+        li + li {
+          margin-top: 5px;
+        }
+
+        .notes {
+          grid-template-columns: 1fr;
+          gap: 8px;
+          padding: 14px 12px 16px;
+          border-top-width: 2px;
+        }
+
+        .note-card {
+          padding: 11px 12px;
+          border-width: 2px;
+          border-radius: 12px;
+          font-size: 0.92rem;
+          line-height: 1.45;
+        }
+
+        .footnote {
+          padding: 0 12px 18px;
+          font-size: 0.78rem;
+          line-height: 1.45;
+        }
+      }
+
       @media print {
         @page {
           size: A4 landscape;
@@ -319,7 +540,7 @@
           </article>
           <article class="meta-card">
             <strong>回程</strong>
-            BR185 20:10 那霸起飛 → 20:45 桃園抵達
+            BR185 19:55 那霸起飛 → 20:30 桃園抵達
           </article>
           <article class="meta-card">
             <strong>交通節奏</strong>
@@ -358,8 +579,8 @@
             <tr>
               <td class="date-cell"><span class="date-main">6/6</span><span class="date-sub">六</span></td>
               <td><p class="focus-title">抵達沖繩<br />先採買再入住</p><div class="small">第一天不塞景點，走輕鬆恢復體力路線。</div><span class="emoji-line">✈️🛒🎆</span></td>
-              <td><span class="transport-badge">機場接駁 + 自駕</span><ul><li>那霸機場取兩台車</li><li>機場 → 浦添帕爾科商場（SAN-A PARCO CITY）</li><li>浦添帕爾科商場（SAN-A PARCO CITY） → 北谷飯店</li></ul></td>
-              <td><ul><li>09:15 抵達那霸，租車取車</li><li>浦添帕爾科商場（SAN-A PARCO CITY）採買食材、飲料、生活用品</li><li>入住 北谷美濱公寓（Lapin Mihama Residence Hotel）</li><li>晚上美國村海邊散步</li><li>20:00 北谷西海岸週六煙火</li></ul></td>
+              <td><span class="transport-badge">機場接駁 + 自駕</span><ul><li>那霸機場取兩台車</li><li>機場 → 帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）</li><li>帕爾科商場（SAN-A Urasoe West Coast PARCO CITY） → 北谷飯店</li></ul></td>
+              <td><ul><li>09:15 抵達那霸，租車取車</li><li>帕爾科商場（SAN-A Urasoe West Coast PARCO CITY） 採買食材、飲料、生活用品</li><li>入住 北谷美濱公寓（Lapin Mihama Residence Hotel）</li><li>晚上美國村海邊散步</li><li>20:00 北谷西海岸週六煙火</li></ul></td>
               <td><ul><li>機場或沿途簡單午餐</li><li>晚餐可自炊或美國村簡單吃</li></ul></td>
               <td><span class="stay-badge">6/6 - 6/8</span><strong>北谷美濱公寓（Lapin Mihama Residence Hotel）</strong><br />北谷美濱公寓式住宿，可開伙。</td>
             </tr>
@@ -415,7 +636,7 @@
               <td class="date-cell"><span class="date-main">6/13</span><span class="date-sub">六</span></td>
               <td><p class="focus-title">返台日<br />本部牧場午餐</p><div class="small">抓保守機場緩衝，不要太晚還車。</div><span class="emoji-line">🥩🛍️✈️</span></td>
               <td><span class="transport-badge">那霸市區 + 機場還車</span><ul><li>退房後行李放車上</li><li>那霸 → 阿希比娜約 20-25 分</li><li>景點 → 租車還車點</li><li>接駁回那霸機場</li></ul></td>
-              <td><ul><li>上午退房後短暫市區補逛 / 咖啡</li><li>11:30 燒肉本部牧場 那霸店午餐</li><li>下午 阿希比娜暢貨中心（Ashibinaa Outlet） 最後採買</li><li>16:30 前建議完成還車</li><li>20:10 BR185 從那霸返台</li></ul></td>
+              <td><ul><li>上午退房後短暫市區補逛 / 咖啡</li><li>11:30 燒肉本部牧場 那霸店午餐</li><li>13:10-15:00 阿希比娜暢貨中心（Ashibinaa Outlet）重點採買</li><li>16:00 前完成還車並搭接駁</li><li>16:30 抵達那霸機場</li><li>16:30-19:15 報到、托運、安檢</li><li>19:55 BR185 從那霸返台</li></ul></td>
               <td><ul><li>午餐：燒肉本部牧場 那霸店</li><li>下午視採買節奏簡單吃</li><li>上機前預留托運與出境時間</li></ul></td>
               <td><span class="stay-badge">返台</span><strong>當日離境</strong><br />那霸機場出發，晚上回到台灣。</td>
             </tr>
@@ -426,7 +647,7 @@
       <section class="notes">
         <article class="note-card"><strong>小提醒 1</strong>第一天晚餐走輕鬆路線，重點是順利接上北谷煙火。</article>
         <article class="note-card"><strong>小提醒 2</strong>恩納段以飯店活動為主，海況不好就切雨天備案，不硬衝。</article>
-        <article class="note-card"><strong>小提醒 3</strong>6/13 建議 16:30 前完成還車，留接駁、托運、安檢緩衝。</article>
+        <article class="note-card"><strong>小提醒 3</strong>BR185 19:55 起飛，6/13 建議 16:00 前完成還車；阿希比娜只抓重點店，機場緩衝優先。</article>
         <article class="note-card"><strong>小提醒 4</strong>這張是家人版總表；若要看細時間，可回主分享頁查看完整節奏。</article>
       </section>
 
