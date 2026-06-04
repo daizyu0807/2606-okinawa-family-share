@@ -564,6 +564,12 @@ const tripData = {
           description: "琉球王國代表性文化景點，和首里周邊一起排最順。"
         },
         {
+          name: "西來院達磨寺（西来院）",
+          badges: ["sunny", "rainy"],
+          distance: "首里站步行約 5 分鐘；兩台車停車位有限",
+          description: "D7 首里周邊短停備案，主打達磨與祈願；適合取代早上國際通一小段，雨太大或不想搭單軌就跳過。"
+        },
+        {
           name: "壺屋やちむん通",
           badges: ["sunny", "food"],
           distance: "距離飯店步行或短程車程可達",
@@ -738,7 +744,7 @@ const placeCatalog = [
   { aliases: ["首里城"], mapQuery: "Shuri Castle", type: "歷史景點" },
   { aliases: ["國際通", "國際通晚間自由活動"], mapQuery: "Kokusai Dori Naha", type: "商店街" },
   { aliases: ["壺屋やちむん通"], mapQuery: "Tsuboya Yachimun Street Naha Okinawa", type: "散步街" },
-  { aliases: ["西來院"], mapQuery: "西來院 沖繩", type: "寺院" },
+  { aliases: ["西來院達磨寺（西来院）", "西來院"], mapQuery: "西来院 首里赤田町 那覇 沖縄", type: "寺院" },
   { aliases: ["沖宮"], mapQuery: "沖宮 那霸", type: "神社" },
   { aliases: ["浜屋沖繩麵"], mapQuery: "浜屋 沖縄そば 北谷", type: "沖繩麵店" },
   { aliases: ["唐吉訶德國際通店"], mapQuery: "Don Quijote Kokusai Dori Naha", type: "折扣商店" },
