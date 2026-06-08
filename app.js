@@ -86,10 +86,11 @@ const tripData = {
             { time: "09:15-10:45", label: "古宇利橋", duration: "約 60-90 分", desc: "先到古宇利橋與海景短停；若停車或天候不順，縮短拍照時間。" },
             { time: "10:45-12:15", label: "午餐：白沙食堂（しらさ食堂） / 古宇利蝦蝦飯（KOURI SHRIMP）", duration: "約 75-90 分", desc: "古宇利島午餐候選：白沙食堂主打海膽蓋飯，但海膽可能季節或售完；古宇利蝦蝦飯是蒜香蝦飯名店，可能排隊。8 人看停車與候位決定。" },
             { time: "12:45-14:15", label: "名護鳳梨園（ナゴパイナップルパーク）", duration: "約 75-90 分", desc: "鳳梨主題園區，平日多數資料寫 10:00-17:00、最後入園 16:30；午餐後再接過去。" },
-            { time: "14:30-16:30", label: "返回飯店 / 飯店設施休息", duration: "約 2 小時", desc: "下午回恩納飯店休息，可接泳池、Blue Reef 或房間整理。" },
+            { time: "14:30-15:15", label: "MEGA 唐吉訶德名護店（MEGAドン・キホーテ 名護店）", duration: "約 30-45 分", desc: "鳳梨園後順路短停補買；若大家累了或採買需求不高就跳過，優先回飯店休息。" },
+            { time: "15:15-16:30", label: "返回飯店 / 飯店設施休息", duration: "約 75 分", desc: "下午回恩納飯店休息，可接泳池、Blue Reef 或房間整理。" },
             { time: "18:00-19:00", label: "晚餐：飯店自助晚餐", duration: "約 60 分", desc: "北部外出後晚上回飯店最穩，避免再找停車與分桌。" }
           ],
-          note: "D4 改成北部短線：8:00 早餐後去古宇利橋，午餐看白沙食堂或古宇利蝦蝦飯，下午接名護鳳梨園後回飯店休息。"
+          note: "D4 改成北部短線：8:00 早餐後去古宇利橋，午餐看白沙食堂或古宇利蝦蝦飯，下午接名護鳳梨園；若還有體力可短停 MEGA 唐吉訶德名護店。"
         },
         {
           day: "D5",
@@ -419,6 +420,12 @@ const tripData = {
           badges: ["sunny", "rainy"],
           distance: "古宇利橋回程可接，距離飯店約 45-60 分鐘車程",
           description: "D4 北部主景點；平日多數資料寫 10:00-17:00，最後入園 16:30，適合親子與長輩。"
+        },
+        {
+          name: "MEGA 唐吉訶德名護店（MEGAドン・キホーテ 名護店）",
+          badges: ["sunny", "rainy"],
+          distance: "名護鳳梨園後順路短停",
+          description: "D4 鳳梨園後的補買點；商場停車方便，適合採買零食、飲料與日用品，累了就跳過。"
         },
         {
           name: "白沙食堂（しらさ食堂）",
@@ -779,6 +786,7 @@ const placeCatalog = [
   { aliases: ["座喜味城跡", "座喜味城跡與座喜味城跡博物館"], mapQuery: "Zakimi Castle Ruins Yomitan Okinawa", type: "歷史散步點" },
   { aliases: ["古宇利橋"], mapQuery: "Kouri Bridge Okinawa", type: "海景橋" },
   { aliases: ["名護鳳梨園（ナゴパイナップルパーク）"], mapQuery: "Nago Pineapple Park Okinawa", type: "主題園區" },
+  { aliases: ["MEGA 唐吉訶德名護店（MEGAドン・キホーテ 名護店）"], mapQuery: "MEGA ドン・キホーテ 名護店 5 Chome-24 Okita Nago Okinawa", type: "折扣商店" },
   { aliases: ["白沙食堂（しらさ食堂）"], mapQuery: "しらさ食堂 古宇利176 沖縄", type: "海鮮食堂" },
   { aliases: ["古宇利蝦蝦飯（KOURI SHRIMP）"], mapQuery: "KOURI SHRIMP 古宇利314 沖縄", type: "蒜香蝦飯" },
   { aliases: ["殘波岬"], mapQuery: "Cape Zanpa", type: "海岬景點" },
