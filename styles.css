@@ -803,7 +803,13 @@ body::before {
   }
 
   .stays-panel {
-    display: none;
+    display: block;
+  }
+
+  .stay-card {
+    min-height: auto;
+    padding: 16px;
+    border-radius: 18px;
   }
 
   .hero-stat-grid article {
