@@ -84,12 +84,12 @@ const tripData = {
           items: [
             { time: "08:00-09:00", label: "飯店早餐", duration: "約 60 分", desc: "明天先抓 8:00 早餐，吃完再出發往北部。" },
             { time: "09:15-10:45", label: "古宇利橋", duration: "約 60-90 分", desc: "先到古宇利橋與海景短停；若停車或天候不順，縮短拍照時間。" },
-            { time: "11:15-12:45", label: "名護鳳梨園（ナゴパイナップルパーク）", duration: "約 75-90 分", desc: "鳳梨主題園區，平日多數資料寫 10:00-17:00、最後入園 16:30；適合接在古宇利橋後。" },
-            { time: "12:45-13:45", label: "午餐：名護周邊 / 鳳梨園簡餐", duration: "約 60 分", desc: "北部行程午餐用簡單可控路線，避免 8 人再追排隊名店。" },
+            { time: "10:45-12:15", label: "午餐：白沙食堂（しらさ食堂） / 古宇利蝦蝦飯（KOURI SHRIMP）", duration: "約 75-90 分", desc: "古宇利島午餐候選：白沙食堂主打海膽蓋飯，但海膽可能季節或售完；古宇利蝦蝦飯是蒜香蝦飯名店，可能排隊。8 人看停車與候位決定。" },
+            { time: "12:45-14:15", label: "名護鳳梨園（ナゴパイナップルパーク）", duration: "約 75-90 分", desc: "鳳梨主題園區，平日多數資料寫 10:00-17:00、最後入園 16:30；午餐後再接過去。" },
             { time: "14:30-16:30", label: "返回飯店 / 飯店設施休息", duration: "約 2 小時", desc: "下午回恩納飯店休息，可接泳池、Blue Reef 或房間整理。" },
             { time: "18:00-19:00", label: "晚餐：飯店自助晚餐", duration: "約 60 分", desc: "北部外出後晚上回飯店最穩，避免再找停車與分桌。" }
           ],
-          note: "D4 改成北部短線：8:00 早餐後去古宇利橋與名護鳳梨園，下午回飯店休息。"
+          note: "D4 改成北部短線：8:00 早餐後去古宇利橋，午餐看白沙食堂或古宇利蝦蝦飯，下午接名護鳳梨園後回飯店休息。"
         },
         {
           day: "D5",
@@ -98,11 +98,11 @@ const tripData = {
           items: [
             { time: "08:00-09:00", label: "飯店早餐", duration: "約 60 分", desc: "先吃早餐，依浮潛集合時間調整出發。" },
             { time: "09:30-12:00", label: "青之洞窟浮潛", duration: "約 2-2.5 小時", desc: "後天預計安排青之洞窟浮潛；目的地為真榮田岬・青之洞窟，仍需依海況、業者集合時間與現場安全規定調整。" },
-            { time: "12:15-13:30", label: "午餐：恩納之驛", duration: "約 60-75 分", desc: "浮潛後用小吃、熟食與琉冰補餐；停車與分流彈性高，適合 8 人。" },
-            { time: "14:00-16:00", label: "飯店休息 / Blue Reef", duration: "約 1.5-2 小時", desc: "下水後先回飯店沖洗休息，可接室內泳池、溫泉或房間放鬆。" },
+            { time: "12:15-13:30", label: "午餐：飯店午餐 / 真榮田岬周邊簡餐", duration: "約 60-75 分", desc: "浮潛後以最近、好停車、好集合為原則，累了就直接回飯店吃或休息。" },
+            { time: "14:00-16:00", label: "飯店休息 / Blue Reef", duration: "約 1.5-2 小時", desc: "下水後回飯店沖洗休息，可接室內泳池、溫泉或房間放鬆。" },
             { time: "18:00-19:00", label: "晚餐：飯店自助晚餐", duration: "約 60 分", desc: "浮潛日晚上不再安排遠程景點，回飯店用餐最穩。" }
           ],
-          note: "D5 改成青之洞窟浮潛主線；若海況不好，才退回恩納之驛、鐘乳洞或飯店設施。"
+          note: "D5 改成青之洞窟浮潛主線；若海況不好就退回飯店設施或沖繩鐘乳洞。"
         }
       ]
     },
@@ -319,12 +319,6 @@ const tripData = {
           description: "風獅爺彩繪、相框製作、陶藝等約 30-60 分鐘體驗，適合不下水的人或雨天備案；多數需看當日受理時間。"
         },
         {
-          name: "恩納之驛",
-          badges: ["food", "rainy"],
-          distance: "距離飯店約 5-10 分鐘車程",
-          description: "恩納村很實用的小吃站，推薦芒果冰、海葡萄料理和在地熟食。"
-        },
-        {
           name: "純沖繩料理 三線の花",
           badges: ["food", "rainy"],
           distance: "恩納村 58 號線周邊，短程車程",
@@ -391,18 +385,6 @@ const tripData = {
           description: "如果想找另一個文化型雨備點，這裡可做手作與傳統體驗。"
         },
         {
-          name: "恩納村文化情報中心",
-          badges: ["rainy"],
-          distance: "距離飯店約 20-25 分鐘車程",
-          description: "適合短停的輕量文化點，下雨時可先來這裡補旅遊資訊與看展望空間。"
-        },
-        {
-          name: "恩納村博物館",
-          badges: ["rainy"],
-          distance: "可和文化情報中心一起安排",
-          description: "補充恩納在地歷史與文化，適合不想跑太遠時排成小型室內行程。"
-        },
-        {
           name: "生命之丘（BIOS之丘）",
           badges: ["sunny", "rainy"],
           distance: "距離飯店約 20 分鐘車程",
@@ -437,6 +419,18 @@ const tripData = {
           badges: ["sunny", "rainy"],
           distance: "古宇利橋回程可接，距離飯店約 45-60 分鐘車程",
           description: "D4 北部主景點；平日多數資料寫 10:00-17:00，最後入園 16:30，適合親子與長輩。"
+        },
+        {
+          name: "白沙食堂（しらさ食堂）",
+          badges: ["food", "sunny"],
+          distance: "古宇利島，古宇利橋附近",
+          description: "D4 午餐候選，主打海膽蓋飯；海膽可能受季節與售完影響，8 人先看停車、座位與現場供應。"
+        },
+        {
+          name: "古宇利蝦蝦飯（KOURI SHRIMP）",
+          badges: ["food", "sunny"],
+          distance: "古宇利島，古宇利橋附近",
+          description: "D4 午餐候選，蒜香蝦飯名店；可能排隊，適合和白沙食堂二選一或分流。"
         },
         {
           name: "殘波岬",
@@ -646,26 +640,25 @@ const rainyScheduleDays = {
       title: "雨天版：飯店室內 + 琉球村",
       items: [
         { time: "09:30-11:30", label: "飯店設施活動：Blue Reef / 館內休息", duration: "約 90-120 分", desc: "取消戶外浮潛，改室內泳池、溫泉、三溫暖、工藝體驗或房間休息，先觀察雨勢。" },
-        { time: "11:30-13:00", label: "午餐：飯店午餐 / 三線の花候選", duration: "約 60-90 分", desc: "雨大就留飯店用餐；想吃在地料理可改三線の花，8 人先確認訂位與停車，恩納之驛留給 D5。" },
+        { time: "11:30-13:00", label: "午餐：飯店午餐 / 三線の花候選", duration: "約 60-90 分", desc: "雨大就留飯店用餐；想吃在地料理可改三線の花，8 人先確認訂位與停車。" },
         { time: "14:00-16:00", label: "琉球村", duration: "約 90-120 分", desc: "古民家、表演與手作元素集中，是恩納段最穩的雨天備案。" },
         { time: "16:20-17:20", label: "體驗王國むら咲むら", duration: "約 60 分", desc: "若想再接一個文化型雨備點，可改手作體驗；不想移動就回飯店。" },
         { time: "18:00 後", label: "晚餐：飯店晚餐 / 館內收尾", duration: "彈性", desc: "晚上回飯店用餐或館內休息，不安排殘波岬，也不再找遠程餐廳。"}
       ],
-      note: "雨天版 D4 取消浮潛與殘波岬，中午不排恩納之驛，避免和 D5 重複。"
+      note: "雨天版 D4 取消浮潛與殘波岬，中午以飯店或好停車餐廳為主。"
     },
     {
       day: "D5",
       date: "6/10（三）",
-      title: "雨天版：恩納之驛、鐘乳洞與文化情報中心",
+      title: "雨天版：飯店休息、鐘乳洞與館內設施",
       items: [
         { time: "09:30-11:00", label: "飯店自由活動", duration: "約 90 分", desc: "雨天早上不急著出門，先看雨勢與道路狀況。" },
-        { time: "11:15-12:30", label: "午餐：恩納之驛", duration: "約 60-75 分", desc: "午餐、小吃與琉冰都可在這裡解決；停車與分流穩，適合 8 人各自買再集合。" },
-        { time: "13:00-14:30", label: "沖繩鐘乳洞", duration: "約 60-90 分", desc: "自然系室內點，天氣不穩時比海岬更好安排。" },
-        { time: "15:00-16:00", label: "恩納村文化情報中心", duration: "約 45-60 分", desc: "短停補旅遊資訊與看室內展示，雨天不用拉太遠車程。" },
-        { time: "16:00-17:00", label: "恩納村博物館", duration: "約 45-60 分", desc: "若大家還有體力，可接博物館；否則直接回飯店。" },
+        { time: "11:30-12:30", label: "午餐：飯店午餐 / 三線の花候選", duration: "約 60 分", desc: "雨天午餐以飯店或容易停車的餐廳為主，避免再拉點。" },
+        { time: "13:00-14:30", label: "沖繩鐘乳洞", duration: "約 60-90 分", desc: "海況或雨勢不好時的自然系室內備案；若家人不想移動就留飯店。" },
+        { time: "15:00-16:30", label: "Blue Reef 室內泳池與溫泉", duration: "約 60-90 分", desc: "家人不喜歡博物館，午後改以飯店室內設施、溫泉或房間休息收尾。" },
         { time: "18:00-19:00", label: "晚餐：飯店自助晚餐", duration: "約 60 分", desc: "D5 雨天外出後回飯店用餐最穩；若想外食，三線の花可作備案但需先訂位。" }
       ],
-      note: "雨天版 D5 取消真榮田岬海邊短走，改成休息站、鐘乳洞與短程室內文化點。"
+      note: "雨天版 D5 避開博物館型景點，改用飯店設施、溫泉或沖繩鐘乳洞。"
     }
   ],
   naha: [
@@ -771,7 +764,6 @@ const placeCatalog = [
   { aliases: ["釣の家谷茶め〜"], mapQuery: "釣の家谷茶め〜 恩納村 谷茶 沖縄", type: "釣具租借" },
   { aliases: ["谷茶海岸"], mapQuery: "谷茶ビーチ 恩納村 沖縄", type: "海岸散步" },
   { aliases: ["琉球之牛燒肉 恩納別館"], mapQuery: "焼肉 琉球の牛 恩納別館 101-1 Maeganeku Onna Okinawa", type: "燒肉餐廳" },
-  { aliases: ["恩納之驛"], mapQuery: "Onna no Eki Nakayukui Market", type: "休息站" },
   { aliases: ["純沖繩料理 三線の花"], mapQuery: "三線の花 恩納村 沖縄", type: "沖繩料理" },
   { aliases: ["THE GARLIC SHRIMP"], mapQuery: "THE GARLIC SHRIMP Onna Okinawa", type: "蝦蝦飯" },
   { aliases: ["Gajimaru Cafe&Bar"], mapQuery: "Gajimaru Cafe Bar Maeda Onna Okinawa", type: "素食餐廳" },
@@ -781,14 +773,14 @@ const placeCatalog = [
   { aliases: ["真榮田岬"], mapQuery: "Cape Maeda Okinawa", type: "海岬景點" },
   { aliases: ["琉球村"], mapQuery: "Ryukyu Mura", type: "文化園區" },
   { aliases: ["體驗王國むら咲むら"], mapQuery: "体験王国むら咲むら 読谷 沖縄", type: "文化體驗園區" },
-  { aliases: ["恩納村文化情報中心"], mapQuery: "恩納村文化情報センター 沖縄", type: "文化設施" },
-  { aliases: ["恩納村博物館"], mapQuery: "恩納村博物館 沖縄", type: "博物館" },
   { aliases: ["生命之丘（BIOS之丘）"], mapQuery: "ビオスの丘 うるま 沖縄", type: "自然園區" },
   { aliases: ["沖繩鐘乳洞"], mapQuery: "沖繩鐘乳洞 うるま 沖縄", type: "鐘乳洞" },
   { aliases: ["海上滑索"], mapQuery: "PANZA Okinawa MegaZIP Onna Okinawa", type: "海上滑索" },
   { aliases: ["座喜味城跡", "座喜味城跡與座喜味城跡博物館"], mapQuery: "Zakimi Castle Ruins Yomitan Okinawa", type: "歷史散步點" },
   { aliases: ["古宇利橋"], mapQuery: "Kouri Bridge Okinawa", type: "海景橋" },
   { aliases: ["名護鳳梨園（ナゴパイナップルパーク）"], mapQuery: "Nago Pineapple Park Okinawa", type: "主題園區" },
+  { aliases: ["白沙食堂（しらさ食堂）"], mapQuery: "しらさ食堂 古宇利176 沖縄", type: "海鮮食堂" },
+  { aliases: ["古宇利蝦蝦飯（KOURI SHRIMP）"], mapQuery: "KOURI SHRIMP 古宇利314 沖縄", type: "蒜香蝦飯" },
   { aliases: ["殘波岬"], mapQuery: "Cape Zanpa", type: "海岬景點" },
   { aliases: ["阿希比娜暢貨中心（Ashibinaa Outlet）"], mapQuery: "Okinawa Outlet Mall Ashibinaa", type: "暢貨中心" },
   { aliases: ["運動用品店豐崎店（Sports Depo）", "SPORTS DEPO Toyosaki"], mapQuery: "SPORTS DEPO Toyosaki 1-411 Toyosaki Tomigusuku Okinawa", type: "運動用品店" },
