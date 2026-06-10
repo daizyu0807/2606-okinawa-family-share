@@ -78,19 +78,17 @@ const tripData = {
         {
           day: "D4",
           date: "6/9（二）",
-          title: "名護配鏡、鳳梨園、古宇利活動與唐吉訶德",
+          title: "鳳梨園、唐吉訶德名護店、古宇利大橋與永旺配鏡",
           items: [
             { time: "08:00-09:00", label: "早餐：飯店和食早餐會場", duration: "約 60 分", desc: "6/9 早餐改飯店和食早餐會場，用完餐再出發往名護。" },
-            { time: "09:30-10:15", label: "出發前往名護市", duration: "約 40-45 分", desc: "從沖繩蒙特利水療度假酒店出發，走高速公路北上；今天把名護與古宇利島串成一條線。" },
-            { time: "10:15-11:00", label: "OWNDAYS AEON Nago", duration: "約 45 分", desc: "一開店先挑鏡框、驗光與付款，人少比較不排隊；告知店員傍晚回程再取件，避免卡後面行程。" },
-            { time: "11:15-12:45", label: "名護鳳梨園（ナゴパイナップルパーク）", duration: "約 1.5 小時", desc: "搭乘自動鳳梨遊園車，適合全家輕鬆走走；可買鳳梨點心，抓 1.5 小時不要拖到午餐。" },
-            { time: "13:15-14:30", label: "午餐：白沙食堂（しらさ食堂） / 古宇利蝦蝦飯（KOURI SHRIMP）", duration: "約 75 分", desc: "穿過古宇利大橋到島上，先吃白沙食堂海膽蓋飯，再到古宇利蝦蝦飯外帶招牌蒜味奶油蝦飯分食；依排隊與供應調整。" },
-            { time: "14:30-15:45", label: "古宇利海洋塔（古宇利オーシャンタワー）", duration: "約 60-75 分", desc: "搭無人高爾夫球車登高望海，沿途可拍古宇利大橋；塔內有貝殼展示，頂樓展望台看 360 度古宇利藍。" },
-            { time: "15:45-17:00", label: "Heart Rock（ハートロック）", duration: "約 45-60 分", desc: "到 Tinu 海灘看心形礁石；需走一小段沙石斜坡，長輩或雨後路滑時可只短停拍照。" },
-            { time: "17:00-18:00", label: "南返名護 / OWNDAYS 取眼鏡", duration: "約 60 分", desc: "離開古宇利島南下，回 OWNDAYS AEON Nago 領眼鏡；順便在 AEON 休息、上洗手間。" },
-            { time: "18:15-20:30", label: "MEGA 唐吉訶德名護店（MEGAドン・キホーテ 名護店）", duration: "約 2-2.5 小時", desc: "北部 MEGA 大店，土產、藥妝、零食與電器都齊；晚餐可在館內或周邊用熟食、便當或連鎖餐廳解決，買完直接裝車回飯店。" }
+            { time: "09:30-10:15", label: "出發前往名護鳳梨園", duration: "約 40-45 分", desc: "早餐後先往名護鳳梨園，不先配眼鏡。" },
+            { time: "10:15-12:00", label: "名護鳳梨園（ナゴパイナップルパーク）", duration: "約 1.5-2 小時", desc: "早餐後第一站是鳳梨園，搭自動鳳梨遊園車、逛商店與買鳳梨點心。" },
+            { time: "12:15-14:30", label: "MEGA 唐吉訶德名護店（MEGAドン・キホーテ 名護店）", duration: "約 2-2.5 小時", desc: "鳳梨園後先到 MEGA 唐吉訶德名護店採買；午餐可用館內或周邊熟食、便當、連鎖餐廳彈性處理。" },
+            { time: "15:00-16:00", label: "古宇利大橋", duration: "約 45-60 分", desc: "唐吉後再往古宇利大橋，重點是橋景、海景短停與拍照，不再拉古宇利島深度活動。" },
+            { time: "16:30-18:00", label: "永旺名護店（イオン名護店） / OWNDAYS AEON Nago", duration: "約 60-90 分", desc: "最後到永旺名護店與 OWNDAYS 配眼鏡，順便休息、上洗手間與補買。" },
+            { time: "18:00 後", label: "返回飯店 / 晚餐彈性", duration: "彈性", desc: "配眼鏡後視體力回飯店；晚餐可依現場狀況在名護簡單吃或回飯店處理。" }
           ],
-          note: "D4 改成北部一日遊：先名護配鏡，接鳳梨園、古宇利島午餐、海洋塔與 Heart Rock，回名護取眼鏡後用 MEGA 唐吉訶德收尾。"
+          note: "D4 實際順序改為：和食早餐會場後先名護鳳梨園，再 MEGA 唐吉訶德名護店，接古宇利大橋，最後永旺名護店與 OWNDAYS 配眼鏡。"
         },
         {
           day: "D5",
@@ -400,52 +398,28 @@ const tripData = {
           description: "適合不想跑遠時安排成半日文化散步，步調輕鬆。"
         },
         {
-          name: "古宇利橋",
+          name: "古宇利大橋",
           badges: ["sunny"],
           distance: "距離飯店約 60-75 分鐘車程",
-          description: "D4 前往古宇利島午餐與活動時通過，海景拍照可視停車與時間短停。"
+          description: "D4 唐吉後接古宇利大橋，重點是橋景、海景短停與拍照，不再拉古宇利島深度活動。"
         },
         {
           name: "OWNDAYS AEON Nago",
           badges: ["sunny", "rainy"],
           distance: "名護 AEON 內，飯店出發約 40-45 分鐘車程",
-          description: "D4 第一站快速配鏡與驗光；先辦好手續，傍晚南返名護時再回來取件。"
+          description: "D4 最後一站與永旺名護店一起處理配眼鏡，順便休息與補買。"
         },
         {
           name: "名護鳳梨園（ナゴパイナップルパーク）",
           badges: ["sunny", "rainy"],
-          distance: "OWNDAYS 後順路，距離飯店約 45-60 分鐘車程",
-          description: "D4 第二站；搭自動鳳梨遊園車，適合全家輕鬆走走，抓 1.5 小時。"
-        },
-        {
-          name: "古宇利海洋塔（古宇利オーシャンタワー）",
-          badges: ["sunny"],
-          distance: "古宇利島內，午餐後順路",
-          description: "D4 古宇利島活動；搭無人高爾夫球車登高望海，塔頂可看古宇利大橋與 360 度海景。"
-        },
-        {
-          name: "Heart Rock（ハートロック）",
-          badges: ["sunny"],
-          distance: "古宇利島北側 Tinu 海灘",
-          description: "D4 古宇利島活動；看心形礁石與海灘，需走沙石斜坡，雨後或長輩疲累時縮短。"
+          distance: "早餐後第一站，距離飯店約 45-60 分鐘車程",
+          description: "D4 早餐後第一站；搭自動鳳梨遊園車，適合全家輕鬆走走。"
         },
         {
           name: "MEGA 唐吉訶德名護店（MEGAドン・キホーテ 名護店）",
           badges: ["sunny", "rainy"],
-          distance: "名護市區，回程採買收尾",
-          description: "D4 最終採買點；北部 MEGA 大店，晚餐可在館內或周邊用熟食、便當或連鎖餐廳解決。"
-        },
-        {
-          name: "白沙食堂（しらさ食堂）",
-          badges: ["food", "sunny"],
-          distance: "古宇利島，古宇利橋附近",
-          description: "D4 午餐候選，主打海膽蓋飯；海膽可能受季節與售完影響，8 人先看停車、座位與現場供應。"
-        },
-        {
-          name: "古宇利蝦蝦飯（KOURI SHRIMP）",
-          badges: ["food", "sunny"],
-          distance: "古宇利島，古宇利橋附近",
-          description: "D4 午餐候選，蒜香蝦飯名店；可能排隊，適合和白沙食堂二選一或分流。"
+          distance: "鳳梨園後順路",
+          description: "D4 鳳梨園後採買點；北部 MEGA 大店，午餐可用館內或周邊熟食、便當、連鎖餐廳彈性處理。"
         },
         {
           name: "殘波岬",
@@ -791,14 +765,11 @@ const placeCatalog = [
   { aliases: ["Lawson 恩納村周邊（ローソン）"], mapQuery: "ローソン 恩納村 沖縄", type: "便利商店" },
   { aliases: ["海上滑索"], mapQuery: "PANZA Okinawa MegaZIP Onna Okinawa", type: "海上滑索" },
   { aliases: ["座喜味城跡", "座喜味城跡與座喜味城跡博物館"], mapQuery: "Zakimi Castle Ruins Yomitan Okinawa", type: "歷史散步點" },
-  { aliases: ["古宇利橋"], mapQuery: "Kouri Bridge Okinawa", type: "海景橋" },
+  { aliases: ["古宇利大橋", "古宇利橋"], mapQuery: "Kouri Bridge Okinawa", type: "海景橋" },
   { aliases: ["OWNDAYS AEON Nago"], mapQuery: "OWNDAYS AEON Nago Okinawa", type: "眼鏡店" },
+  { aliases: ["永旺名護店（イオン名護店） / OWNDAYS AEON Nago", "永旺名護店（イオン名護店）"], mapQuery: "イオン名護店 沖縄", type: "商場" },
   { aliases: ["名護鳳梨園（ナゴパイナップルパーク）"], mapQuery: "Nago Pineapple Park Okinawa", type: "主題園區" },
-  { aliases: ["古宇利海洋塔（古宇利オーシャンタワー）"], mapQuery: "Kouri Ocean Tower Okinawa", type: "展望塔" },
-  { aliases: ["Heart Rock（ハートロック）"], mapQuery: "Heart Rock Kouri Island Okinawa", type: "海灘景點" },
   { aliases: ["MEGA 唐吉訶德名護店（MEGAドン・キホーテ 名護店）"], mapQuery: "MEGA ドン・キホーテ 名護店 5 Chome-24 Okita Nago Okinawa", type: "折扣商店" },
-  { aliases: ["白沙食堂（しらさ食堂）"], mapQuery: "しらさ食堂 古宇利176 沖縄", type: "海鮮食堂" },
-  { aliases: ["古宇利蝦蝦飯（KOURI SHRIMP）"], mapQuery: "KOURI SHRIMP 古宇利314 沖縄", type: "蒜香蝦飯" },
   { aliases: ["殘波岬"], mapQuery: "Cape Zanpa", type: "海岬景點" },
   { aliases: ["阿希比娜暢貨中心（Ashibinaa Outlet）"], mapQuery: "Okinawa Outlet Mall Ashibinaa", type: "暢貨中心" },
   { aliases: ["運動用品店豐崎店（Sports Depo）", "SPORTS DEPO Toyosaki"], mapQuery: "SPORTS DEPO Toyosaki 1-411 Toyosaki Tomigusuku Okinawa", type: "運動用品店" },
