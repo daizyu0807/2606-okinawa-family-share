@@ -27,34 +27,32 @@ const tripData = {
         {
           day: "D1",
           date: "6/6（六）",
-          title: "早班機抵達，先採買再入住",
+          title: "實際紀錄：帕爾科到傍晚，煙火後採購開伙",
           items: [
             { time: "06:45", label: "長榮 BR112 台北桃園出發", duration: "06:45 起飛", desc: "早班機，建議 04:45 前抵達桃園二航廈。" },
             { time: "09:15-10:30", label: "那霸機場取車", duration: "約 60 分", desc: "09:15 抵達後前往 租車臨空豐崎營業所（那霸機場）領兩台車。" },
-            { time: "11:00-12:30", label: "午餐：機場或帕爾科商場簡餐", duration: "約 60-90 分", desc: "8 人先以好停車、好集合為原則；若時間順，就到帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）用美食街或餐廳。" },
-            { time: "13:10-15:25", label: "帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）", duration: "約 2 小時 15 分", desc: "一次完成食材、飲料、早餐麵包與生活用品採買，也可順手用餐、休息與看海。" },
-            { time: "16:00-16:30", label: "入住北谷美濱公寓（Lapin Mihama Residence Hotel）", duration: "約 30 分", desc: "安頓行李、分配房間與停車。" },
-            { time: "18:00-19:00", label: "晚餐：公寓開伙 / 美國村室內餐廳", duration: "約 60 分", desc: "主選公寓開伙；若外食，以美國村步行可達餐廳為主，不另外開車找店，晚餐後直接接煙火動線。" },
-            { time: "19:15-19:50", label: "美國村海邊散步＋卡位", duration: "約 30 分", desc: "建議往海邊步道 或 美國村海側移動，提早找好全家一起看的位置。" },
+            { time: "11:00-12:30", label: "午餐：帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）", duration: "約 60-90 分", desc: "抵達後直接在帕爾科商場用餐，8 人集合與停車都相對穩。" },
+            { time: "12:30-17:00", label: "帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）", duration: "約 4.5 小時", desc: "實際停留到約 17:00，完成午餐、採買、休息與看海。" },
+            { time: "17:30-18:00", label: "入住北谷美濱公寓（Lapin Mihama Residence Hotel）", duration: "約 30 分", desc: "Check-in 後先放行李，稍微整理再去美國村看煙火。" },
+            { time: "19:15-19:50", label: "美國村", duration: "約 30 分", desc: "飯店 Check-in 後步行到美國村，先找煙火觀賞位置。" },
             { time: "20:00-20:10", label: "北谷西海岸週六煙火", duration: "約 3-10 分", desc: "常態週六晚間施放；仍建議出發前 1-3 天確認官方公告與天氣。" },
-            { time: "20:10 後", label: "步行回飯店休息", duration: "彈性", desc: "D1 以輕鬆收尾，美國村正式慢逛留給 D2。" }
+            { time: "20:20-21:15", label: "永旺北谷店（イオン北谷店）採購", duration: "約 45-60 分", desc: "煙火後去永旺北谷店補食材、飲料與隔天用品。" },
+            { time: "21:15 後", label: "晚餐：公寓開伙", duration: "彈性", desc: "採購後回公寓開伙，D1 以飯店休息收尾。" }
           ],
-          note: "早班機日以採買、入住與晚間煙火為主，維持輕鬆節奏。"
+          note: "D1 實際紀錄：午餐在帕爾科，商場停到 17:00；Check-in 後去美國村看煙火，煙火後到永旺北谷店採購，晚餐公寓開伙。"
         },
         {
           day: "D2",
           date: "6/7（日）",
-          title: "北谷商圈主日",
+          title: "實際紀錄：美國村、88 牛排、WORKMAN 與永旺採購",
           items: [
-            { time: "09:30-10:00", label: "美濱公共停車場停車＋美國村海側散步", duration: "約 30 分", desc: "週日先把車停好，後續以步行和分流為主，降低 8 人找車位與集合壓力。" },
-            { time: "10:00-11:00", label: "美式雜貨店阿美利肯迪波（American Depot）＋美國村先逛", duration: "約 60 分", desc: "10:00 開門的逛街型名店，不用排座位，適合等午餐前先逛。" },
-            { time: "11:00-12:15", label: "午餐：美國村名店候選", duration: "約 75 分", desc: "主選 88 牛排館（Steak House 88）或東尼羅馬美式肋排（Tony Roma's），座位較適合 8 人；若想在地口味，改塔可飯咖啡奇吉姆那（タコライスCafe きじむなぁ）或鶴小沖繩麵（そば家 鶴小）。" },
-            { time: "12:30-13:45", label: "二手街北谷店（2nd STREET）", duration: "約 60-75 分", desc: "主力二手挖寶點，依停車與體力決定是否全員同行。" },
-            { time: "13:45-14:30", label: "沃克曼Plus 北谷國體道路店（WORKMAN Plus）", duration: "約 30-45 分", desc: "機能服、涼感衣、雨衣、防曬與鞋襪採買備案；停車約 10 台，現場不好停就跳過。" },
-            { time: "14:45-16:30", label: "美國村慢逛＋日落海灘散步", duration: "約 90-105 分", desc: "商圈、伴手禮和海邊景色一起排，不硬塞甜點店；若停車或體力不順，就直接回公寓休息。" },
-            { time: "18:00 後", label: "晚餐：自炊 / 北谷港海邊餐廳候選", duration: "彈性", desc: "主選公寓自炊；若想外食，可看北谷港海邊餐廳（Chatan Harbor）或美國村室內餐廳。8 人外食先看座位與停車，不追排隊店。" }
+            { time: "10:00-11:00", label: "美國村", duration: "約 60 分", desc: "D2 只寫美國村，不再拆停車或特定店家。" },
+            { time: "11:00-12:15", label: "午餐：88 牛排館北谷店（Steak House 88）", duration: "約 75 分", desc: "D2 午餐實際吃 88 牛排，座位多、兒童友善，適合 8 人家庭。" },
+            { time: "13:45-14:30", label: "沃克曼Plus 北谷國體道路店（WORKMAN Plus）", duration: "約 30-45 分", desc: "下午去 WORKMAN 採買機能服、涼感衣、雨衣、防曬與鞋襪等用品。" },
+            { time: "15:00-16:30", label: "永旺北谷店（イオン北谷店）採購", duration: "約 60-90 分", desc: "WORKMAN 後到永旺北谷店補超市採購，買晚餐與公寓需要的食材。" },
+            { time: "18:00 後", label: "晚餐：公寓開伙", duration: "彈性", desc: "晚餐回公寓開伙，不另外安排外食。" }
           ],
-          note: "重心完全放在北谷；餐廳用候選方式處理，避免 8 人被單一排隊名店卡住。"
+          note: "D2 實際紀錄：停車、特定店家與二手街北谷都拿掉；主線只保留美國村、88 牛排、WORKMAN、永旺北谷店採購與公寓開伙。"
         }
       ]
     },
@@ -80,29 +78,32 @@ const tripData = {
         {
           day: "D4",
           date: "6/9（二）",
-          title: "8 點早餐，古宇利橋、鳳梨園與名護採買",
+          title: "名護配鏡、鳳梨園、古宇利活動與唐吉訶德",
           items: [
-            { time: "08:00-09:00", label: "飯店早餐", duration: "約 60 分", desc: "明天先抓 8:00 早餐，吃完再出發往北部。" },
-            { time: "09:15-10:45", label: "古宇利橋", duration: "約 60-90 分", desc: "先到古宇利橋與海景短停；若停車或天候不順，縮短拍照時間。" },
-            { time: "10:45-12:15", label: "午餐：白沙食堂（しらさ食堂） / 古宇利蝦蝦飯（KOURI SHRIMP）", duration: "約 75-90 分", desc: "古宇利島午餐候選：白沙食堂主打海膽蓋飯，但海膽可能季節或售完；古宇利蝦蝦飯是蒜香蝦飯名店，可能排隊。8 人看停車與候位決定。" },
-            { time: "12:45-15:45", label: "名護鳳梨園（ナゴパイナップルパーク）", duration: "約 3 小時", desc: "鳳梨主題園區抓滿 3 小時，慢慢搭車、拍照、逛商店與休息；平日多數資料寫 10:00-17:00、最後入園 16:30。" },
-            { time: "16:00-19:00", label: "MEGA 唐吉訶德名護店（MEGAドン・キホーテ 名護店）", duration: "約 3 小時", desc: "鳳梨園後順路採買，抓 3 小時給 8 人分流、結帳與停車緩衝；若大家累了可提早收。" },
-            { time: "19:00-20:00", label: "返回飯店 / 晚餐彈性", duration: "約 60 分", desc: "唐吉後回恩納飯店；晚餐看現場狀況改飯店、名護簡單吃或回飯店後再處理。" }
+            { time: "09:30-10:15", label: "出發前往名護市", duration: "約 40-45 分", desc: "從沖繩蒙特利水療度假酒店出發，走高速公路北上；今天把名護與古宇利島串成一條線。" },
+            { time: "10:15-11:00", label: "OWNDAYS AEON Nago", duration: "約 45 分", desc: "一開店先挑鏡框、驗光與付款，人少比較不排隊；告知店員傍晚回程再取件，避免卡後面行程。" },
+            { time: "11:15-12:45", label: "名護鳳梨園（ナゴパイナップルパーク）", duration: "約 1.5 小時", desc: "搭乘自動鳳梨遊園車，適合全家輕鬆走走；可買鳳梨點心，抓 1.5 小時不要拖到午餐。" },
+            { time: "13:15-14:30", label: "午餐：白沙食堂（しらさ食堂） / 古宇利蝦蝦飯（KOURI SHRIMP）", duration: "約 75 分", desc: "穿過古宇利大橋到島上，先吃白沙食堂海膽蓋飯，再到古宇利蝦蝦飯外帶招牌蒜味奶油蝦飯分食；依排隊與供應調整。" },
+            { time: "14:30-15:45", label: "古宇利海洋塔（古宇利オーシャンタワー）", duration: "約 60-75 分", desc: "搭無人高爾夫球車登高望海，沿途可拍古宇利大橋；塔內有貝殼展示，頂樓展望台看 360 度古宇利藍。" },
+            { time: "15:45-17:00", label: "Heart Rock（ハートロック）", duration: "約 45-60 分", desc: "到 Tinu 海灘看心形礁石；需走一小段沙石斜坡，長輩或雨後路滑時可只短停拍照。" },
+            { time: "17:00-18:00", label: "南返名護 / OWNDAYS 取眼鏡", duration: "約 60 分", desc: "離開古宇利島南下，回 OWNDAYS AEON Nago 領眼鏡；順便在 AEON 休息、上洗手間。" },
+            { time: "18:15-20:30", label: "MEGA 唐吉訶德名護店（MEGAドン・キホーテ 名護店）", duration: "約 2-2.5 小時", desc: "北部 MEGA 大店，土產、藥妝、零食與電器都齊；晚餐可在館內或周邊用熟食、便當或連鎖餐廳解決，買完直接裝車回飯店。" }
           ],
-          note: "D4 改成北部長停版：鳳梨園與 MEGA 唐吉訶德名護店都各抓 3 小時，晚餐改彈性，不再卡 18:00 飯店晚餐。"
+          note: "D4 改成北部一日遊：先名護配鏡，接鳳梨園、古宇利島午餐、海洋塔與 Heart Rock，回名護取眼鏡後用 MEGA 唐吉訶德收尾。"
         },
         {
           day: "D5",
           date: "6/10（三）",
-          title: "青之洞窟浮潛日",
+          title: "飯店海灘、鐘乳洞與石川採買日",
           items: [
-            { time: "08:00-09:00", label: "飯店早餐", duration: "約 60 分", desc: "先吃早餐，依浮潛集合時間調整出發。" },
-            { time: "09:30-12:00", label: "青之洞窟浮潛", duration: "約 2-2.5 小時", desc: "後天預計安排青之洞窟浮潛；目的地為真榮田岬・青之洞窟，仍需依海況、業者集合時間與現場安全規定調整。" },
-            { time: "12:15-13:30", label: "午餐：飯店午餐 / 真榮田岬周邊簡餐", duration: "約 60-75 分", desc: "浮潛後以最近、好停車、好集合為原則，累了就直接回飯店吃或休息。" },
-            { time: "14:00-16:00", label: "飯店休息 / Blue Reef", duration: "約 1.5-2 小時", desc: "下水後回飯店沖洗休息，可接室內泳池、溫泉或房間放鬆。" },
-            { time: "18:00-19:00", label: "晚餐：飯店自助晚餐", duration: "約 60 分", desc: "浮潛日晚上不再安排遠程景點，回飯店用餐最穩。" }
+            { time: "08:00-09:00", label: "飯店早餐", duration: "約 60 分", desc: "早餐後不急著出門，先確認天氣、海況與家人體力。" },
+            { time: "09:15-11:30", label: "飯店海灘 / 老虎海灘", duration: "約 2-2.5 小時", desc: "改以飯店海灘、泳池或 Blue Reef 放鬆為主，水上活動依現場規定調整。" },
+            { time: "12:00-13:15", label: "午餐：飯店午餐 / 石川周邊簡餐", duration: "約 60-75 分", desc: "下午往石川、鐘乳洞方向移動，午餐以好停車、好集合為原則。" },
+            { time: "14:00-15:20", label: "沖繩鐘乳洞", duration: "約 60-90 分", desc: "自然系室內景點，避開午後日曬與天氣不穩；長輩疲累時縮短停留。" },
+            { time: "15:45-17:15", label: "San-A Ishikawa City / サンエー石川シティ", duration: "約 60-90 分", desc: "採買、上洗手間與補給；可順手處理衣物、藥妝或晚餐前休息。" },
+            { time: "18:00-20:00", label: "晚餐：純沖繩料理 三線の花", duration: "約 1.5-2 小時", desc: "晚餐改三線の花；8 人建議先確認訂位與停車。" }
           ],
-          note: "D5 改成青之洞窟浮潛主線；若海況不好就退回飯店設施或沖繩鐘乳洞。"
+          note: "D5 實際行程改為飯店早餐後留飯店海灘放鬆，下午先去沖繩鐘乳洞，再到 San-A Ishikawa City（サンエー石川シティ），晚上吃純沖繩料理三線の花。"
         }
       ]
     },
@@ -162,15 +163,9 @@ const tripData = {
       summary: "近的先留這些。",
       places: [
         {
-          name: "二手街北谷店（2nd STREET）",
-          badges: ["shopping", "rainy"],
-          distance: "距離飯店約 5 分鐘車程",
-          description: "北谷主要二手店，古著、包包、鞋款和生活雜貨都能一起看。"
-        },
-        {
           name: "沃克曼Plus 北谷國體道路店（WORKMAN Plus）",
           badges: ["shopping", "rainy"],
-          distance: "距離二手街北谷店約短程車程",
+          distance: "距離公寓約短程車程",
           description: "機能服、涼感衣、雨衣、防曬、鞋襪與戶外小物備案；停車約 10 台，適合分流短停。"
         },
         {
@@ -220,12 +215,6 @@ const tripData = {
           badges: ["food", "rainy"],
           distance: "美國村內，步行或短程移動",
           description: "產地直送海鮮迴轉壽司；不接受訂位，尖峰可能排隊，8 人可接受分桌時再排。"
-        },
-        {
-          name: "美式雜貨店阿美利肯迪波（American Depot）",
-          badges: ["shopping", "rainy"],
-          distance: "美國村內",
-          description: "10:00 開門的美式雜貨與服飾名店，適合午餐前先逛。"
         },
         {
           name: "帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）",
@@ -412,19 +401,37 @@ const tripData = {
           name: "古宇利橋",
           badges: ["sunny"],
           distance: "距離飯店約 60-75 分鐘車程",
-          description: "D4 北部短線主景點；海景拍照與短停為主，停車與天候不順就縮短。"
+          description: "D4 前往古宇利島午餐與活動時通過，海景拍照可視停車與時間短停。"
+        },
+        {
+          name: "OWNDAYS AEON Nago",
+          badges: ["sunny", "rainy"],
+          distance: "名護 AEON 內，飯店出發約 40-45 分鐘車程",
+          description: "D4 第一站快速配鏡與驗光；先辦好手續，傍晚南返名護時再回來取件。"
         },
         {
           name: "名護鳳梨園（ナゴパイナップルパーク）",
           badges: ["sunny", "rainy"],
-          distance: "古宇利橋回程可接，距離飯店約 45-60 分鐘車程",
-          description: "D4 北部主景點；抓 3 小時慢逛、搭車、拍照與休息，平日多數資料寫 10:00-17:00，最後入園 16:30。"
+          distance: "OWNDAYS 後順路，距離飯店約 45-60 分鐘車程",
+          description: "D4 第二站；搭自動鳳梨遊園車，適合全家輕鬆走走，抓 1.5 小時。"
+        },
+        {
+          name: "古宇利海洋塔（古宇利オーシャンタワー）",
+          badges: ["sunny"],
+          distance: "古宇利島內，午餐後順路",
+          description: "D4 古宇利島活動；搭無人高爾夫球車登高望海，塔頂可看古宇利大橋與 360 度海景。"
+        },
+        {
+          name: "Heart Rock（ハートロック）",
+          badges: ["sunny"],
+          distance: "古宇利島北側 Tinu 海灘",
+          description: "D4 古宇利島活動；看心形礁石與海灘，需走沙石斜坡，雨後或長輩疲累時縮短。"
         },
         {
           name: "MEGA 唐吉訶德名護店（MEGAドン・キホーテ 名護店）",
           badges: ["sunny", "rainy"],
-          distance: "名護鳳梨園後順路短停",
-          description: "D4 鳳梨園後的補買點；抓 3 小時給 8 人分流、結帳與停車緩衝，適合採買零食、飲料與日用品。"
+          distance: "名護市區，回程採買收尾",
+          description: "D4 最終採買點；北部 MEGA 大店，晚餐可在館內或周邊用熟食、便當或連鎖餐廳解決。"
         },
         {
           name: "白沙食堂（しらさ食堂）",
@@ -601,11 +608,11 @@ const rainyScheduleDays = {
       items: [
         { time: "06:45", label: "長榮 BR112 台北桃園出發", duration: "06:45 起飛", desc: "早班機維持原安排，雨具與薄外套放隨身包，落地後先不要排戶外點。" },
         { time: "09:15-10:30", label: "那霸機場取車", duration: "約 60 分", desc: "取車後直接走商場與住宿動線，避免雨天多點上下車。" },
-        { time: "11:00-12:30", label: "午餐：機場或帕爾科商場簡餐", duration: "約 60-90 分", desc: "以好停車、好集合為原則；若已到帕爾科商場（SAN-A Urasoe West Coast PARCO CITY），直接用美食街或館內餐廳。" },
-        { time: "13:10-15:25", label: "帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）", duration: "約 2 小時 15 分", desc: "用商場完成採買、雨具補給與休息；若午餐還沒吃，這裡就是 D1 最穩餐點。" },
-        { time: "16:00-16:30", label: "入住北谷美濱公寓（Lapin Mihama Residence Hotel）", duration: "約 30 分", desc: "先回房整理濕衣物與行李，讓晚上保留彈性。" },
-        { time: "18:00-19:30", label: "晚餐：公寓開伙 / 美國村室內餐廳", duration: "約 90 分", desc: "雨勢大就自炊；雨小再步行到美國村室內餐廳，8 人不另外開車追店，不硬等煙火。" },
-        { time: "20:00 後", label: "步行回飯店休息", duration: "彈性", desc: "若煙火取消或雨勢明顯，直接回房休息，D2 再看天氣調整。" }
+        { time: "11:00-12:30", label: "午餐：帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）", duration: "約 60-90 分", desc: "實際午餐在帕爾科商場完成。" },
+        { time: "12:30-17:00", label: "帕爾科商場（SAN-A Urasoe West Coast PARCO CITY）", duration: "約 4.5 小時", desc: "停留到約 17:00，完成採買、休息與看海。" },
+        { time: "17:30-18:00", label: "入住北谷美濱公寓（Lapin Mihama Residence Hotel）", duration: "約 30 分", desc: "Check-in 後整理行李。" },
+        { time: "19:15-20:10", label: "美國村與北谷西海岸週六煙火", duration: "約 60 分", desc: "入住後步行到美國村看煙火。" },
+        { time: "20:20 後", label: "永旺北谷店（イオン北谷店）採購 / 公寓開伙", duration: "彈性", desc: "煙火後採購，晚餐回公寓開伙。" }
       ],
       note: "雨天版 D1 不把煙火當必要行程，核心是順利取車、採買、入住與恢復體力。"
     },
@@ -614,15 +621,13 @@ const rainyScheduleDays = {
       date: "6/7（日）",
       title: "雨天版：北谷室內購物與餐廳候選",
       items: [
-        { time: "09:30-10:00", label: "美濱公共停車場停車＋美國村海側散步", duration: "約 30 分", desc: "雨小才走海側；雨大就只停車集合，直接進商圈。" },
-        { time: "10:00-11:00", label: "美式雜貨店阿美利肯迪波（American Depot）＋美國村先逛", duration: "約 60 分", desc: "以室內店舖與短距離移動為主，減少撐傘移動。" },
-        { time: "11:00-12:15", label: "午餐：美國村名店候選", duration: "約 75 分", desc: "主選 88 牛排館或 Tony Roma's，座位較適合 8 人；若想在地口味，改塔可飯或鶴小沖繩麵。雨天重點是座位與候位，不追戶外景。" },
-        { time: "12:30-13:45", label: "二手街北谷店（2nd STREET）", duration: "約 60-75 分", desc: "雨天很適合排二手店，兩台車分流也好集合。" },
-        { time: "13:45-14:30", label: "沃克曼Plus 北谷國體道路店（WORKMAN Plus）", duration: "約 30-45 分", desc: "補雨衣、防水鞋襪、涼感衣與機能用品；現場不好停就跳過。" },
-        { time: "15:00-16:30", label: "美國村", duration: "約 60-90 分", desc: "雨天仍可逛商圈與室內店舖，只取消日落海灘散步；雨勢太大再改北谷溫泉泳池 ちゅらーゆ。" },
-        { time: "18:00 後", label: "晚餐：北谷港海邊餐廳 / 自炊", duration: "彈性", desc: "雨小可看北谷港海邊餐廳（Chatan Harbor）；雨大就回公寓自炊或美國村室內餐廳。8 人先看座位和停車。"}
+        { time: "10:00-11:00", label: "美國村", duration: "約 60 分", desc: "只寫美國村，不再拆停車或特定店家。" },
+        { time: "11:00-12:15", label: "午餐：88 牛排館北谷店（Steak House 88）", duration: "約 75 分", desc: "D2 午餐實際吃 88 牛排。" },
+        { time: "13:45-14:30", label: "沃克曼Plus 北谷國體道路店（WORKMAN Plus）", duration: "約 30-45 分", desc: "採買機能用品。" },
+        { time: "15:00-16:30", label: "永旺北谷店（イオン北谷店）採購", duration: "約 60-90 分", desc: "WORKMAN 後到永旺北谷店補超市採購。" },
+        { time: "18:00 後", label: "晚餐：公寓開伙", duration: "彈性", desc: "晚餐回公寓開伙。"}
       ],
-      note: "雨天版 D2 保留美國村商圈，只取消日落海灘散步；雨勢太大才切到溫泉或回公寓。"
+      note: "雨天版 D2 也沿用實際紀錄：美國村、88 牛排、WORKMAN、永旺北谷店採購與公寓開伙。"
     }
   ],
   onna: [
@@ -656,15 +661,16 @@ const rainyScheduleDays = {
     {
       day: "D5",
       date: "6/10（三）",
-      title: "雨天版：飯店休息、鐘乳洞與館內設施",
+      title: "雨天版：飯店海灘、鐘乳洞與石川採買",
       items: [
-        { time: "09:30-11:00", label: "飯店自由活動", duration: "約 90 分", desc: "雨天早上不急著出門，先看雨勢與道路狀況。" },
-        { time: "11:30-12:30", label: "午餐：飯店午餐 / 三線の花候選", duration: "約 60 分", desc: "雨天午餐以飯店或容易停車的餐廳為主，避免再拉點。" },
-        { time: "13:00-14:30", label: "沖繩鐘乳洞", duration: "約 60-90 分", desc: "海況或雨勢不好時的自然系室內備案；若家人不想移動就留飯店。" },
-        { time: "15:00-16:30", label: "Blue Reef 室內泳池與溫泉", duration: "約 60-90 分", desc: "家人不喜歡博物館，午後改以飯店室內設施、溫泉或房間休息收尾。" },
-        { time: "18:00-19:00", label: "晚餐：飯店自助晚餐", duration: "約 60 分", desc: "D5 雨天外出後回飯店用餐最穩；若想外食，三線の花可作備案但需先訂位。" }
+        { time: "08:00-09:00", label: "飯店早餐", duration: "約 60 分", desc: "早餐後先看雨勢與家人體力，不急著拉遠程景點。" },
+        { time: "09:15-11:30", label: "飯店海灘 / Blue Reef", duration: "約 2 小時", desc: "能下水就走飯店海灘；雨勢較大就改室內泳池、溫泉或房間休息。" },
+        { time: "12:00-13:15", label: "午餐：飯店午餐 / 石川周邊簡餐", duration: "約 60-75 分", desc: "午餐以好停車、好集合為主，接下午鐘乳洞與石川採買。" },
+        { time: "14:00-15:20", label: "沖繩鐘乳洞", duration: "約 60-90 分", desc: "自然系室內景點，天氣不穩時仍好安排。" },
+        { time: "15:45-17:15", label: "San-A Ishikawa City / サンエー石川シティ", duration: "約 60-90 分", desc: "採買、上洗手間與晚餐前休息。" },
+        { time: "18:00-20:00", label: "晚餐：純沖繩料理 三線の花", duration: "約 1.5-2 小時", desc: "晚餐改三線の花；8 人建議先確認訂位與停車。" }
       ],
-      note: "雨天版 D5 避開博物館型景點，改用飯店設施、溫泉或沖繩鐘乳洞。"
+      note: "D5 雨天版與實際版一致：早上飯店設施為主，下午鐘乳洞、San-A Ishikawa City，晚上三線の花。"
     }
   ],
   naha: [
@@ -723,11 +729,9 @@ const placeCatalog = [
   { aliases: ["長榮 BR185 那霸返台"], mapQuery: "Naha Airport", type: "航班" },
   { aliases: ["那霸機場取車"], mapQuery: "OTS 臨空豐岐營業所（那霸機場）", type: "租車" },
   { aliases: ["豬肉蛋飯糰（北谷美國村店）"], mapQuery: "ポーたま 北谷アメリカンビレッジ店 沖縄", type: "早餐店" },
-  { aliases: ["二手街北谷店（2nd STREET）"], mapQuery: "2nd STREET 北谷店 沖縄", type: "二手店" },
   { aliases: ["沃克曼Plus 北谷國體道路店（WORKMAN Plus）"], mapQuery: "WORKMAN Plus 北谷国体道路店 沖縄", type: "機能服店" },
   { aliases: ["美國村"], mapQuery: "American Village Okinawa", type: "商圈景點" },
-  { aliases: ["美濱公共停車場停車＋美國村海側散步"], mapQuery: "美浜公共駐車場 北谷", type: "停車場" },
-  { aliases: ["美式雜貨店阿美利肯迪波（American Depot）＋美國村先逛", "美式雜貨店阿美利肯迪波（American Depot）"], mapQuery: "American Depot Chatan Okinawa", type: "購物店" },
+  { aliases: ["永旺北谷店（イオン北谷店）"], mapQuery: "イオン北谷店 沖縄", type: "超市" },
   { aliases: ["美國村名店午餐候選"], mapQuery: "Steak House 88 Chatan American Village Okinawa", type: "午餐候選" },
   { aliases: ["88 牛排館北谷店（Steak House 88）"], mapQuery: "Steak House 88 Chatan American Village Okinawa", type: "牛排餐廳" },
   { aliases: ["東尼羅馬美式肋排北谷店（Tony Roma's）"], mapQuery: "Tony Roma's Chatan Mihama Okinawa", type: "美式餐廳" },
@@ -781,10 +785,14 @@ const placeCatalog = [
   { aliases: ["體驗王國むら咲むら"], mapQuery: "体験王国むら咲むら 読谷 沖縄", type: "文化體驗園區" },
   { aliases: ["生命之丘（BIOS之丘）"], mapQuery: "ビオスの丘 うるま 沖縄", type: "自然園區" },
   { aliases: ["沖繩鐘乳洞"], mapQuery: "沖繩鐘乳洞 うるま 沖縄", type: "鐘乳洞" },
+  { aliases: ["San-A Ishikawa City / サンエー石川シティ", "サンエー石川シティ"], mapQuery: "サンエー 石川シティ うるま 沖縄", type: "購物中心" },
   { aliases: ["海上滑索"], mapQuery: "PANZA Okinawa MegaZIP Onna Okinawa", type: "海上滑索" },
   { aliases: ["座喜味城跡", "座喜味城跡與座喜味城跡博物館"], mapQuery: "Zakimi Castle Ruins Yomitan Okinawa", type: "歷史散步點" },
   { aliases: ["古宇利橋"], mapQuery: "Kouri Bridge Okinawa", type: "海景橋" },
+  { aliases: ["OWNDAYS AEON Nago"], mapQuery: "OWNDAYS AEON Nago Okinawa", type: "眼鏡店" },
   { aliases: ["名護鳳梨園（ナゴパイナップルパーク）"], mapQuery: "Nago Pineapple Park Okinawa", type: "主題園區" },
+  { aliases: ["古宇利海洋塔（古宇利オーシャンタワー）"], mapQuery: "Kouri Ocean Tower Okinawa", type: "展望塔" },
+  { aliases: ["Heart Rock（ハートロック）"], mapQuery: "Heart Rock Kouri Island Okinawa", type: "海灘景點" },
   { aliases: ["MEGA 唐吉訶德名護店（MEGAドン・キホーテ 名護店）"], mapQuery: "MEGA ドン・キホーテ 名護店 5 Chome-24 Okita Nago Okinawa", type: "折扣商店" },
   { aliases: ["白沙食堂（しらさ食堂）"], mapQuery: "しらさ食堂 古宇利176 沖縄", type: "海鮮食堂" },
   { aliases: ["古宇利蝦蝦飯（KOURI SHRIMP）"], mapQuery: "KOURI SHRIMP 古宇利314 沖縄", type: "蒜香蝦飯" },
