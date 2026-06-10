@@ -80,6 +80,7 @@ const tripData = {
           date: "6/9（二）",
           title: "名護配鏡、鳳梨園、古宇利活動與唐吉訶德",
           items: [
+            { time: "08:00-09:00", label: "早餐：飯店和食早餐會場", duration: "約 60 分", desc: "6/9 早餐改飯店和食早餐會場，用完餐再出發往名護。" },
             { time: "09:30-10:15", label: "出發前往名護市", duration: "約 40-45 分", desc: "從沖繩蒙特利水療度假酒店出發，走高速公路北上；今天把名護與古宇利島串成一條線。" },
             { time: "10:15-11:00", label: "OWNDAYS AEON Nago", duration: "約 45 分", desc: "一開店先挑鏡框、驗光與付款，人少比較不排隊；告知店員傍晚回程再取件，避免卡後面行程。" },
             { time: "11:15-12:45", label: "名護鳳梨園（ナゴパイナップルパーク）", duration: "約 1.5 小時", desc: "搭乘自動鳳梨遊園車，適合全家輕鬆走走；可買鳳梨點心，抓 1.5 小時不要拖到午餐。" },
@@ -96,14 +97,14 @@ const tripData = {
           date: "6/10（三）",
           title: "飯店海灘、鐘乳洞與石川採買日",
           items: [
-            { time: "08:00-09:00", label: "飯店早餐", duration: "約 60 分", desc: "早餐後不急著出門，先確認天氣、海況與家人體力。" },
-            { time: "09:15-11:30", label: "飯店海灘 / 老虎海灘", duration: "約 2-2.5 小時", desc: "改以飯店海灘、泳池或 Blue Reef 放鬆為主，水上活動依現場規定調整。" },
-            { time: "12:00-13:15", label: "午餐：飯店午餐 / 石川周邊簡餐", duration: "約 60-75 分", desc: "下午往石川、鐘乳洞方向移動，午餐以好停車、好集合為原則。" },
-            { time: "14:00-15:20", label: "沖繩鐘乳洞", duration: "約 60-90 分", desc: "自然系室內景點，避開午後日曬與天氣不穩；長輩疲累時縮短停留。" },
-            { time: "15:45-17:15", label: "San-A Ishikawa City / サンエー石川シティ", duration: "約 60-90 分", desc: "採買、上洗手間與補給；可順手處理衣物、藥妝或晚餐前休息。" },
-            { time: "18:00-20:00", label: "晚餐：純沖繩料理 三線の花", duration: "約 1.5-2 小時", desc: "晚餐改三線の花；8 人建議先確認訂位與停車。" }
+            { time: "08:00-09:00", label: "早餐：飯店自助早餐會場", duration: "約 60 分", desc: "6/10 早餐改飯店自助早餐會場，早餐後先留在飯店海灘。" },
+            { time: "09:15-11:15", label: "飯店海灘 / 老虎海灘", duration: "約 2 小時", desc: "青之洞窟浮潛改為飯店海灘，水上活動依現場規定與家人體力調整。" },
+            { time: "11:45-13:00", label: "沖繩鐘乳洞", duration: "約 60-75 分", desc: "先去鐘乳洞，自然系室內景點，避開午後日曬與天氣不穩；長輩疲累時縮短停留。" },
+            { time: "13:30-15:30", label: "午餐 / 採買：San-A Ishikawa City（サンエー石川シティ）", duration: "約 2 小時", desc: "鐘乳洞後到 San-A Ishikawa City 吃午餐、逛超市與補給；停車、洗手間與分流都比較穩。" },
+            { time: "18:00-20:00", label: "晚餐：純沖繩料理 三線の花", duration: "約 1.5-2 小時", desc: "晚餐改三線の花；8 人建議先確認訂位與停車。" },
+            { time: "20:15 後", label: "Lawson 恩納村周邊（ローソン）補買", duration: "彈性", desc: "晚餐後視需要到 Lawson 補飲料、零食與隔天用品，再回飯店休息。" }
           ],
-          note: "D5 實際行程改為飯店早餐後留飯店海灘放鬆，下午先去沖繩鐘乳洞，再到 San-A Ishikawa City（サンエー石川シティ），晚上吃純沖繩料理三線の花。"
+          note: "D5 實際行程改為自助早餐會場、飯店海灘、沖繩鐘乳洞、San-A Ishikawa City 午餐與採買、三線の花晚餐，最後 Lawson 補買。"
         }
       ]
     },
@@ -116,6 +117,7 @@ const tripData = {
           date: "6/11（四）",
           title: "伊亞斯商場午餐、豐崎水族館長版停留、那霸入住與人生酒場",
           items: [
+            { time: "08:00-09:00", label: "早餐：飯店自助早餐會場", duration: "約 60 分", desc: "6/11 早餐使用飯店自助早餐會場，吃完再整理退房行李。" },
             { time: "09:30-10:00", label: "恩納退房", duration: "約 30 分", desc: "退房後一路往南，不折返。" },
             { time: "11:30-12:30", label: "午餐：iias 沖繩豐崎美食街", duration: "約 60 分", desc: "商場內用餐最穩，A&W、沖繩食堂與其他餐飲可分流；停車和水族館同區，8 人不用再換點。" },
             { time: "13:00-18:00", label: "豐崎迪艾姆艾姆水族館（DMM Kariyushi）", duration: "約 4-5 小時", desc: "如果 13:00 左右進館，慢慢逛、拍照、看表演與休息，待到傍晚很合理。" },
@@ -663,14 +665,14 @@ const rainyScheduleDays = {
       date: "6/10（三）",
       title: "雨天版：飯店海灘、鐘乳洞與石川採買",
       items: [
-        { time: "08:00-09:00", label: "飯店早餐", duration: "約 60 分", desc: "早餐後先看雨勢與家人體力，不急著拉遠程景點。" },
-        { time: "09:15-11:30", label: "飯店海灘 / Blue Reef", duration: "約 2 小時", desc: "能下水就走飯店海灘；雨勢較大就改室內泳池、溫泉或房間休息。" },
-        { time: "12:00-13:15", label: "午餐：飯店午餐 / 石川周邊簡餐", duration: "約 60-75 分", desc: "午餐以好停車、好集合為主，接下午鐘乳洞與石川採買。" },
-        { time: "14:00-15:20", label: "沖繩鐘乳洞", duration: "約 60-90 分", desc: "自然系室內景點，天氣不穩時仍好安排。" },
-        { time: "15:45-17:15", label: "San-A Ishikawa City / サンエー石川シティ", duration: "約 60-90 分", desc: "採買、上洗手間與晚餐前休息。" },
-        { time: "18:00-20:00", label: "晚餐：純沖繩料理 三線の花", duration: "約 1.5-2 小時", desc: "晚餐改三線の花；8 人建議先確認訂位與停車。" }
+        { time: "08:00-09:00", label: "早餐：飯店自助早餐會場", duration: "約 60 分", desc: "早餐後先看雨勢與家人體力，不急著拉遠程景點。" },
+        { time: "09:15-11:15", label: "飯店海灘 / Blue Reef", duration: "約 2 小時", desc: "能下水就走飯店海灘；雨勢較大就改室內泳池、溫泉或房間休息。" },
+        { time: "11:45-13:00", label: "沖繩鐘乳洞", duration: "約 60-75 分", desc: "自然系室內景點，天氣不穩時仍好安排。" },
+        { time: "13:30-15:30", label: "午餐 / 採買：San-A Ishikawa City（サンエー石川シティ）", duration: "約 2 小時", desc: "午餐、採買、上洗手間與晚餐前休息。" },
+        { time: "18:00-20:00", label: "晚餐：純沖繩料理 三線の花", duration: "約 1.5-2 小時", desc: "晚餐改三線の花；8 人建議先確認訂位與停車。" },
+        { time: "20:15 後", label: "Lawson 恩納村周邊（ローソン）補買", duration: "彈性", desc: "晚餐後視需要補飲料、零食與隔天用品。" }
       ],
-      note: "D5 雨天版與實際版一致：早上飯店設施為主，下午鐘乳洞、San-A Ishikawa City，晚上三線の花。"
+      note: "D5 雨天版與實際版一致：自助早餐、飯店設施、鐘乳洞、San-A Ishikawa City 午餐採買、三線の花與 Lawson 補買。"
     }
   ],
   naha: [
@@ -785,7 +787,8 @@ const placeCatalog = [
   { aliases: ["體驗王國むら咲むら"], mapQuery: "体験王国むら咲むら 読谷 沖縄", type: "文化體驗園區" },
   { aliases: ["生命之丘（BIOS之丘）"], mapQuery: "ビオスの丘 うるま 沖縄", type: "自然園區" },
   { aliases: ["沖繩鐘乳洞"], mapQuery: "沖繩鐘乳洞 うるま 沖縄", type: "鐘乳洞" },
-  { aliases: ["San-A Ishikawa City / サンエー石川シティ", "サンエー石川シティ"], mapQuery: "サンエー 石川シティ うるま 沖縄", type: "購物中心" },
+  { aliases: ["San-A Ishikawa City（サンエー石川シティ）", "San-A Ishikawa City / サンエー石川シティ", "サンエー石川シティ"], mapQuery: "サンエー 石川シティ うるま 沖縄", type: "購物中心" },
+  { aliases: ["Lawson 恩納村周邊（ローソン）"], mapQuery: "ローソン 恩納村 沖縄", type: "便利商店" },
   { aliases: ["海上滑索"], mapQuery: "PANZA Okinawa MegaZIP Onna Okinawa", type: "海上滑索" },
   { aliases: ["座喜味城跡", "座喜味城跡與座喜味城跡博物館"], mapQuery: "Zakimi Castle Ruins Yomitan Okinawa", type: "歷史散步點" },
   { aliases: ["古宇利橋"], mapQuery: "Kouri Bridge Okinawa", type: "海景橋" },
